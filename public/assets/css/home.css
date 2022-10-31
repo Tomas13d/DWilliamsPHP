@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.text-roboto{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.navbar-color{
+    background-color: rgba(20, 20, 20, 0.546);
+    color: #fff;
+}
+
+.logo-cont{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.logo-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.util-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.lt-m{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.logo-letters{
+    font-family: 'Arvo', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 42px;
+    margin: 10px 0 0 0 ;
+    color: #fff;
+    
+}
+
+.service-letters{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 15px;
+    margin: 5px 0 0 15px;
+    color: #fff;
+}
+.link-letters{
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.link-letters:hover{
+    color: #D6AB55;
+}
+
+.li-margin{
+    margin: 15px;
+}
+
+.contact-bold{
+    font-weight: 600;
+}
+
+.carrousel-img{
+    height: auto; 
+    width: auto; 
+    max-width: 100vh; 
+    max-height: 100vh;
+    min-height: 100vh;
+    min-width: 100%;
+}
+
+.opacity-layer{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top:0;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.591);
+    color: rgb(255, 255, 255);
+}
+.logo-dw{
+    position: absolute;
+    bottom: 20px;
+}
+
+.textP{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 59px;
+}
