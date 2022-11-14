@@ -7,16 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link href="<?php echo base_url('public/assets/css/home.css');?>" rel="stylesheet">
-    <title>D' Williams</title>
+    <link rel="shortcut icon" href="<?php echo base_url('public/assets/images/LogoVoid.png');?>" type="image/png" />
+    <title>d' williams</title>
 </head>
 
 <body>
     <header>
         <nav class="navbar navbar-expand-lg fixed-top navbar-color">
             <div class="container-fluid lt-m util-flex">
+                <a class="no-link" href="<?php echo base_url('/');?>">
                 <div class="logo-cont">
-                    <a class="navbar-brand" href="#">
                         <div class="logo-link">
                             <svg width="45" height="45" viewBox="0 0 1336 1385" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -88,16 +90,14 @@
                             <h2 class="logo-letters">' williams</h2>
                         </div>
                         <h3 class="service-letters">Servicios Inmobiliarios</h3>
-                    </a>
-
-
-                </div>
+                    </div>
+                </a>
                 <div>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav mb-2 mb-lg-0">
                             <!-- ventas dropdown -->
                             <li class="nav-item dropdown li-margin">
-                                <a class="nav-link dropdown-toggle link-letters" href="#" role="button"
+                                <a class="nav-link dropdown-toggle link-letters general-text" href="#" role="button"
                                     data-bs-toggle="dropdown" aria-expanded="false">
                                     Venta
                                 </a>
@@ -112,7 +112,7 @@
                             </li>
                             <!-- alquileres dropdown -->
                             <li class="nav-item dropdown li-margin">
-                                <a class="nav-link dropdown-toggle link-letters" href="#" role="button"
+                                <a class="nav-link dropdown-toggle link-letters general-text" href="#" role="button"
                                     data-bs-toggle="dropdown" aria-expanded="false">
                                     Alquileres
                                 </a>
@@ -126,16 +126,17 @@
                                 </ul>
                             </li>
                             <li class="nav-item li-margin">
-                                <a class="nav-link link-letters" aria-current="page" href="#">Desarrollos</a>
+                                <a class="nav-link link-letters general-text" aria-current="page"
+                                    href="<?php echo base_url('Developments');?>">Desarrollos</a>
                             </li>
                             <li class="nav-item li-margin">
-                                <a class="nav-link link-letters" href="#">Tasaciones</a>
+                                <a class="nav-link link-letters general-text" href="#">Tasaciones</a>
                             </li>
                             <li class="nav-item li-margin">
-                                <a class="nav-link link-letters">Nosotros</a>
+                                <a class="nav-link link-letters general-text">Nosotros</a>
                             </li>
                             <li class="nav-item li-margin">
-                                <a class="nav-link contact-bold link-letters">Contacto</a>
+                                <a class="nav-link contact-bold link-letters general-text">Contacto</a>
                             </li>
                         </ul>
                     </div>
@@ -143,74 +144,9 @@
 
             </div>
         </nav>
-        <header>
-
-            <!-- Carrousel -->
-            <section>
-                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="<?php echo base_url('public/assets/images/San_Luis1.jpg');?>"
-                                class="d-block w-100 carrousel-img" alt="Hospital Ramon Carillo">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="<?php echo base_url('public/assets/images/San_Luis1.jpg');?>"
-                                class="d-block w-100 carrousel-img" alt="Potrero de los Funes">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="<?php echo base_url('public/assets/images/San_Luis1.jpg');?>"
-                                class="d-block w-100 carrousel-img" alt="Inmobiliaria-terrazas">
-                        </div>
-                    </div>
-                    <div class="opacity-layer">
-                        <h3 class="textP">Mas de 35 años acompanandote</h3>
-                        <div class="logo-dw">
-                            <svg width="80" height="80" viewBox="0 0 1371 1371" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M1371 685.5C1371 1064.09 1064.09 1371 685.5 1371C306.909 1371 0 1064.09 0 685.5C0 306.909 306.909 0 685.5 0C1064.09 0 1371 306.909 1371 685.5ZM562.73 206.168L1212.62 804.713L1081.31 799.79L422.755 200.921C422.755 200.921 422.755 200.921 493.362 203.568L562.73 206.168ZM551.672 1135.61C642.413 1135.61 723.896 1095.17 779.756 1030.99V1135.61H965.694V725.705L779.756 557.961V617.954C723.896 553.775 642.413 513.336 551.672 513.336C383.259 513.336 246.734 652.636 246.734 824.472C246.734 996.307 383.259 1135.61 551.672 1135.61ZM575.224 1029C688.184 1029 779.756 934.102 779.756 817.034C779.756 699.967 688.184 605.065 575.224 605.065C462.264 605.065 370.692 699.967 370.692 817.034C370.692 934.102 462.264 1029 575.224 1029ZM740.089 743.899H643.39V771.3H674.482L633.287 901.82L591.83 771.3H624.754H624.873V743.899H624.754H528.173H528.055V771.3H528.173H559.147L517.952 901.82L476.495 771.3H509.538V743.899H412.838V771.3H448.613L498.815 929.837H536.561L575.451 807.626L614.15 929.836L651.896 929.837L702.345 771.3H740.089V743.899ZM779.756 225.752H965.694L1027.67 225.752V332.356H965.694L965.694 332.956V363.985V364.585L965.694 367.065V367.665V398.694V399.294V401.773V402.373V433.402V434.002L965.694 436.482V437.082V468.111V468.711L965.694 471.19V471.79V502.819V503.419V538.127L887.989 468.711H887.979L852.574 437.082L851.902 436.482H851.911L779.979 372.222L779.756 372.023V364.585V363.985V332.956V332.356H717.777V225.752L779.756 225.752Z"
-                                    fill="#D6AB55" />
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas est eveniet quaerat sed sequi velit! Id
-                vitae possimus cumque autem quaerat quis saepe quod expedita incidunt soluta nisi repellat quo dolore
-                rem, eligendi odio et libero provident reprehenderit molestias ullam. Ducimus autem temporibus quasi
-                fugiat laboriosam deleniti quis non dolor.</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas est eveniet quaerat sed sequi velit! Id
-                vitae possimus cumque autem quaerat quis saepe quod expedita incidunt soluta nisi repellat quo dolore
-                rem, eligendi odio et libero provident reprehenderit molestias ullam. Ducimus autem temporibus quasi
-                fugiat laboriosam deleniti quis non dolor.</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas est eveniet quaerat sed sequi velit! Id
-                vitae possimus cumque autem quaerat quis saepe quod expedita incidunt soluta nisi repellat quo dolore
-                rem, eligendi odio et libero provident reprehenderit molestias ullam. Ducimus autem temporibus quasi
-                fugiat laboriosam deleniti quis non dolor.</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas est eveniet quaerat sed sequi velit! Id
-                vitae possimus cumque autem quaerat quis saepe quod expedita incidunt soluta nisi repellat quo dolore
-                rem, eligendi odio et libero provident reprehenderit molestias ullam. Ducimus autem temporibus quasi
-                fugiat laboriosam deleniti quis non dolor.</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas est eveniet quaerat sed sequi velit! Id
-                vitae possimus cumque autem quaerat quis saepe quod expedita incidunt soluta nisi repellat quo dolore
-                rem, eligendi odio et libero provident reprehenderit molestias ullam. Ducimus autem temporibus quasi
-                fugiat laboriosam deleniti quis non dolor.</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas est eveniet quaerat sed sequi velit! Id
-                vitae possimus cumque autem quaerat quis saepe quod expedita incidunt soluta nisi repellat quo dolore
-                rem, eligendi odio et libero provident reprehenderit molestias ullam. Ducimus autem temporibus quasi
-                fugiat laboriosam deleniti quis non dolor.</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas est eveniet quaerat sed sequi velit! Id
-                vitae possimus cumque autem quaerat quis saepe quod expedita incidunt soluta nisi repellat quo dolore
-                rem, eligendi odio et libero provident reprehenderit molestias ullam. Ducimus autem temporibus quasi
-                fugiat laboriosam deleniti quis non dolor.</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas est eveniet quaerat sed sequi velit! Id
-                vitae possimus cumque autem quaerat quis saepe quod expedita incidunt soluta nisi repellat quo dolore
-                rem, eligendi odio et libero provident reprehenderit molestias ullam. Ducimus autem temporibus quasi
-                fugiat laboriosam deleniti quis non dolor.</p>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+     <!-- JavaScript Bundle with Popper -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
                 integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
                 crossorigin="anonymous"></script>
+</header>
 </body>
-
-</html>
