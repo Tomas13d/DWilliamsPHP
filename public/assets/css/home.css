@@ -546,20 +546,23 @@
 
 
 /* DEVELOPMENTS */
-.development-img {
+.header-port {
 	height: auto;
 	width: auto;
 	max-width: 100%;
 	max-height: 550px;
 	min-height: 550px;
 	min-width: 100%;
-	background-image: url("../images/barrios.jpg");
 	background-size: cover;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
+}
+
+.development-background{
+	background-image: url("../images/barrios.jpg");
 }
 
 .logo-devolps{
@@ -646,13 +649,16 @@
 	max-height: 550px;
 	min-height: 550px;
 	min-width: 100%;
-	background-image: url("../images/handshake.jpg");
 	background-size: cover;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
+  }
+  
+  .aboutUs-background {
+	background-image: url("../images/handshake.jpg");
   }
 
 
@@ -695,5 +701,10 @@
 
   .team-img{
 	margin-bottom: 20px;
-
   }
+
+   /* CONTACT */
+
+.contact-backgorung{
+	background-image: url("../images/ContactImg.jpg");
+}

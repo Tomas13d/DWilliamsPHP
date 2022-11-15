@@ -1,5 +1,5 @@
-<section class="aboutUs-img">
-    <h3 class="textP">¿Quienes Somos?</h3>
+<section class="header-port contact-backgorung">
+    <h3 class="textP">Contactanos</h3>
     <div class="logo-devolps">
         <svg width="80" height="80" viewBox="0 0 1371 1371" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -9,68 +9,12 @@
     </div>
 </section>
 
-<section class="vision-sect">
-    <div class="our-props-title">
-        <h3 class="header-text">Nuestras Empresa</h3>
-        <p class="subTitle-text text-box-2">Distinguir nuestro servicio.<br>
-            Permitir el desarrollo profesional de nuestra gente, generando igualdad de oportunidades, capacitando y
-            motivando para alcanzar los objetivos de nuestra empresa.<br>
-            Alcanzar la relación con clientes, colegas, proveedores, inversores, desarrolladores, etc. como forma de
-            manifestar nuestro rol de empresa independiente, comprometida con su entorno. </p>
-    </div>
-</section>
-
 <section class="historia-cont">
     <div class="title-sub">
-        <h5 class="subTitle-text"><strong>Historia</strong></h5>
+        <h5 class="subTitle-text"><strong>Informacion de Contacto</strong></h5>
     </div>
     <div class="contenido-hist">
-        <img src="<?php echo base_url('public/assets/images/Don.jpg');?>" class="d-block"
-            alt="Demo Williams">
-        <p class="history general-text">El 17 de febrero del año 1988, el Martillero Público, Williams Alberto Demo, inicia su actividad en la
-            gestión inmobiliaria poniendo en marcha un proyecto, al que le dedicaría su esfuerzo por el resto de la
-            vida. Debido al sostenido crecimiento y al deseo permanente de brindar mayor comodidad a sus clientes y
-            amigos es que el 29 de septiembre del año 1997 traslada sus oficinas al moderno edificio de calle 9 de Julio
-            748, de la Ciudad de San Luis.
-            En 1998 se incorporan a la empresa 2 de sus 7 hijos que continúan y acrecientan la experiencia de su
-            progenitor, dándole una nueva dinámica y mejoras del servicio a nuestros clientes.</p>
     </div>
 </section>
 
-<section class="historia-cont">
-    <div class="title-sub">
-        <h5 class="subTitle-text"><strong>Conoce a Nuestro Equipo</strong></h5>
-    </div>
-    <div class="equipo-cont">
-        <div class="member-cont">
-        <img src="<?php echo base_url('public/assets/images/Eduardo.jpg');?>" class="d-block team-img"
-            alt="Eduardo Demo">
-            <h5 class="general-text"><strong>Eduardo Daniel Demo</strong></h5>
-            <p class="general-text">CEO, Gerente Comercial</p>
-        </div>
-        <div class="member-cont">
-        <img src="<?php echo base_url('public/assets/images/WillyGrande.jpg');?>" class="d-block team-img"
-            alt="Williams Alberto Demo">
-            <h5 class="general-text"><strong>Williams Alberto Demo</strong></h5>
-            <p class="general-text">CEO, Gerente Administrativo</p>
-        </div>
-        <div class="member-cont">
-        <img src="<?php echo base_url('public/assets/images/Diego.jpg');?>" class="d-block team-img"
-            alt="Diego Demo">
-            <h5 class="general-text"><strong>Diego Lorenzo Demo</strong></h5>
-            <p class="general-text">CEO, Gerente Legal</p>
-        </div>
-        <div class="member-cont">
-        <img src="<?php echo base_url('public/assets/images/Kary.jpg');?>" class="d-block team-img"
-            alt="Karina Perez Galvan">
-            <h5 class="general-text"><strong>Karina Perez Galvan</strong></h5>
-            <p class="general-text">Martillera Administrativa</p>
-        </div>
-        <div class="member-cont">
-        <img src="<?php echo base_url('public/assets/images/Willy.jpg');?>" class="d-block team-img"
-            alt="Williams Maximiliano Demo">
-            <h5 class="general-text"><strong>Williams Maximiliano Demo</strong></h5>
-            <p class="general-text">Asesor Comercial</p>
-        </div>
-    </div>
-</section>
+<

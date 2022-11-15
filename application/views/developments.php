@@ -1,4 +1,4 @@
-<section class="development-img">
+<section class="header-port development-background">
     <h3 class="textP">Conoce nuestros Desarrollos Urbanisticos</h3>
     <div class="logo-devolps">
         <svg width="80" height="80" viewBox="0 0 1371 1371" fill="none" xmlns="http://www.w3.org/2000/svg">

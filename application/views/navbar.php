@@ -120,7 +120,7 @@
                                 <a class="nav-link link-letters general-text" href="<?php echo base_url('AboutUs');?>">Nosotros</a>
                             </li>
                             <li class="nav-item li-margin">
-                                <a class="nav-link contact-bold link-letters general-text">Contacto</a>
+                                <a class="nav-link contact-bold link-letters general-text" href="<?php echo base_url('Contact');?>">Contacto</a>
                             </li>
                         </ul>
                     </div>
