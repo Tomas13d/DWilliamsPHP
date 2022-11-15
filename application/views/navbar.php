@@ -1,20 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <link href="<?php echo base_url('public/assets/css/home.css');?>" rel="stylesheet">
-    <link rel="shortcut icon" href="<?php echo base_url('public/assets/images/LogoVoid.png');?>" type="image/png" />
-    <title>d' williams</title>
-</head>
-
-<body>
-    <header>
+<header>
         <nav class="navbar navbar-expand-lg fixed-top navbar-color">
             <div class="container-fluid lt-m util-flex">
                 <a class="no-link" href="<?php echo base_url('/');?>">
@@ -133,7 +117,7 @@
                                 <a class="nav-link link-letters general-text" href="#">Tasaciones</a>
                             </li>
                             <li class="nav-item li-margin">
-                                <a class="nav-link link-letters general-text">Nosotros</a>
+                                <a class="nav-link link-letters general-text" href="<?php echo base_url('AboutUs');?>">Nosotros</a>
                             </li>
                             <li class="nav-item li-margin">
                                 <a class="nav-link contact-bold link-letters general-text">Contacto</a>
@@ -144,9 +128,4 @@
 
             </div>
         </nav>
-     <!-- JavaScript Bundle with Popper -->
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-                integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-                crossorigin="anonymous"></script>
 </header>
-</body>

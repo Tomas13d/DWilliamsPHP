@@ -6,7 +6,7 @@ class Developments extends CI_Controller {
 	{
 		$this->load->view('head');
 		$this->load->view('navbar');
-        $this->load->view('developments');
+        $this->load->view('contact');
         $this->load->view('footer');
 	}
 }

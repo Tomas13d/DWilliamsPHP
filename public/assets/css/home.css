@@ -577,6 +577,11 @@
 	margin: 0 auto;
 }
 
+.text-box-2{
+	width: 80%;
+	margin: 0 auto;
+}
+
 .image-dev-over-cont{
 	position: relative;
 }
@@ -632,4 +637,63 @@
     transform: translate(-50%, -50%);
     transition: 0.3s;
 	border-radius: 4px;
+  }
+
+  .aboutUs-img{
+	height: auto;
+	width: auto;
+	max-width: 100%;
+	max-height: 550px;
+	min-height: 550px;
+	min-width: 100%;
+	background-image: url("../images/handshake.jpg");
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+  }
+
+
+  /* ABOUT US */
+  .historia-cont{
+	padding: 60px 5%;
+  }
+
+.title-sub{
+	border-bottom: 1px solid black;
+  }
+
+  .contenido-hist{
+	display: flex;
+	align-items: center;
+	margin: 30px 60px 30px 60px;
+  }
+
+  .history{
+	margin-left: 60px;
+	width: 65%;
+  }
+
+  .equipo-cont{
+	margin-top: 30px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+  }
+
+  
+  .member-cont{
+	width: 251px;
+	margin: 40px 100px;
+	text-align: center;
+  }
+
+
+  .team-img{
+	margin-bottom: 20px;
+
   }
