@@ -21,54 +21,53 @@
 </section>
 
 <section class="historia-cont">
-    <div class="title-sub">
-        <h5 class="subTitle-text"><strong>Historia</strong></h5>
-    </div>
     <div class="contenido-hist">
-        <img src="<?php echo base_url('public/assets/images/Don.jpg');?>" class="d-block"
-            alt="Demo Williams">
-        <p class="history general-text">El 17 de febrero del año 1988, el Martillero Público, Williams Alberto Demo, inicia su actividad en la
-            gestión inmobiliaria poniendo en marcha un proyecto, al que le dedicaría su esfuerzo por el resto de la
-            vida. Debido al sostenido crecimiento y al deseo permanente de brindar mayor comodidad a sus clientes y
-            amigos es que el 29 de septiembre del año 1997 traslada sus oficinas al moderno edificio de calle 9 de Julio
-            748, de la Ciudad de San Luis.
-            En 1998 se incorporan a la empresa 2 de sus 7 hijos que continúan y acrecientan la experiencia de su
-            progenitor, dándole una nueva dinámica y mejoras del servicio a nuestros clientes.</p>
+        <img src="<?php echo base_url('public/assets/images/Don.jpg');?>" class="d-block" alt="Demo Williams">
+        <div class="history-cont">
+            <h5 class="subTitle-text"><strong>Historia</strong></h5>
+            <p class="history general-text">El 17 de febrero del año 1988, el Martillero Público, Williams Alberto Demo,
+                inicia su actividad en la
+                gestión inmobiliaria poniendo en marcha un proyecto, al que le dedicaría su esfuerzo por el resto de la
+                vida. Debido al sostenido crecimiento y al deseo permanente de brindar mayor comodidad a sus clientes y
+                amigos es que el 29 de septiembre del año 1997 traslada sus oficinas al moderno edificio de calle 9 de
+                Julio
+                748, de la Ciudad de San Luis.
+                En 1998 se incorporan a la empresa 2 de sus 7 hijos que continúan y acrecientan la experiencia de su
+                progenitor, dándole una nueva dinámica y mejoras del servicio a nuestros clientes.</p>
+        </div>
     </div>
 </section>
 
-<section class="historia-cont">
-    <div class="title-sub">
-        <h5 class="subTitle-text"><strong>Conoce a Nuestro Equipo</strong></h5>
-    </div>
+<section class="historia-cont center-text">
+        <h5 class="header-text"><strong>Conoce a Nuestro Equipo</strong></h5>
     <div class="equipo-cont">
         <div class="member-cont">
-        <img src="<?php echo base_url('public/assets/images/Eduardo.jpg');?>" class="d-block team-img"
-            alt="Eduardo Demo">
+            <img src="<?php echo base_url('public/assets/images/Eduardo.jpg');?>" class="d-block team-img"
+                alt="Eduardo Demo">
             <h5 class="general-text"><strong>Eduardo Daniel Demo</strong></h5>
             <p class="general-text">CEO, Gerente Comercial</p>
         </div>
         <div class="member-cont">
-        <img src="<?php echo base_url('public/assets/images/WillyGrande.jpg');?>" class="d-block team-img"
-            alt="Williams Alberto Demo">
+            <img src="<?php echo base_url('public/assets/images/WillyGrande.jpg');?>" class="d-block team-img"
+                alt="Williams Alberto Demo">
             <h5 class="general-text"><strong>Williams Alberto Demo</strong></h5>
             <p class="general-text">CEO, Gerente Administrativo</p>
         </div>
         <div class="member-cont">
-        <img src="<?php echo base_url('public/assets/images/Diego.jpg');?>" class="d-block team-img"
-            alt="Diego Demo">
+            <img src="<?php echo base_url('public/assets/images/Diego.jpg');?>" class="d-block team-img"
+                alt="Diego Demo">
             <h5 class="general-text"><strong>Diego Lorenzo Demo</strong></h5>
             <p class="general-text">CEO, Gerente Legal</p>
         </div>
         <div class="member-cont">
-        <img src="<?php echo base_url('public/assets/images/Kary.jpg');?>" class="d-block team-img"
-            alt="Karina Perez Galvan">
+            <img src="<?php echo base_url('public/assets/images/Kary.jpg');?>" class="d-block team-img"
+                alt="Karina Perez Galvan">
             <h5 class="general-text"><strong>Karina Perez Galvan</strong></h5>
             <p class="general-text">Martillera Administrativa</p>
         </div>
         <div class="member-cont">
-        <img src="<?php echo base_url('public/assets/images/Willy.jpg');?>" class="d-block team-img"
-            alt="Williams Maximiliano Demo">
+            <img src="<?php echo base_url('public/assets/images/Willy.jpg');?>" class="d-block team-img"
+                alt="Williams Maximiliano Demo">
             <h5 class="general-text"><strong>Williams Maximiliano Demo</strong></h5>
             <p class="general-text">Asesor Comercial</p>
         </div>

@@ -677,9 +677,17 @@
 	margin: 30px 60px 30px 60px;
   }
 
-  .history{
+  .history-cont{
 	margin-left: 60px;
-	width: 65%;
+	width: 75%;
+  }
+
+  .center-text{
+	text-align: center;
+  }
+
+  .history{
+	margin-top: 20px;
   }
 
   .equipo-cont{
@@ -708,3 +716,57 @@
 .contact-backgorung{
 	background-image: url("../images/ContactImg.jpg");
 }
+
+.info-contact-cont{
+	width: 50%;
+	margin: 0 auto;
+}
+
+.info-item-contact{
+	margin: 20px 20px 40px 20px;
+	
+}
+
+.p-contact{
+	margin-left: 30px;
+}
+
+
+.input-item-cont{
+	margin: 20px 20px 40px 0px;
+}
+
+
+
+.input-style{
+	background: #EDEDED;
+	border: none;
+	margin-bottom: 35px;
+}
+
+.input-style::placeholder{
+	color: black;
+}
+
+.social-media-cont{
+	margin-left: 20px;
+	margin-right: 80px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.block-cont{
+	width: 100% ;
+	padding: 20px 5%;
+}
+
+
+/* APPRAISAL */
+
+.appraisal-backgorung {
+	background-image: url("../images/Contacting.jpg");
+}
+
+.appraisal-cont{
+	padding: 60px 5%;
+  }

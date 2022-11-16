@@ -1,5 +1,5 @@
-<section class="header-port contact-backgorung">
-    <h3 class="textP">Contactanos</h3>
+<section class="header-port appraisal-backgorung">
+    <h3 class="textP">Dejanos tu consulta y te responderemos a la brevedad</h3>
     <div class="logo-devolps">
         <svg width="80" height="80" viewBox="0 0 1371 1371" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -9,54 +9,9 @@
     </div>
 </section>
 
-<section class="historia-cont">
-    <div class="title-sub">
-        <h5 class="subTitle-text"><strong>Informacion de Contacto</strong></h5>
-    </div>
-    <div class="contenido-hist">
+<section class="appraisal-cont">
         <div class="info-contact-cont">
-            <div class="info-item-contact">
-                <h4 class="general-text"><i class="bi bi-geo-alt gold-color icon-contact">
-                    </i><strong>Ubicacion:</strong>
-                </h4>
-                <p class="p-contact">9 de Julio 748<br> San Luis - Argentina</p>
-            </div>
-
-            <div class="info-item-contact">
-                <h4 class="general-text"><i class="bi bi-clock gold-color icon-contact"> </i><strong>Horarios de
-                        Atencion:</strong>
-                </h4>
-                <p class="p-contact">Lunes a viernes: 9 a 17hs<br> Sabados: cerrado</p>
-            </div>
-
-            <div class="info-item-contact">
-                <h4 class="general-text"><i class="bi bi-envelope gold-color icon-contact"> </i><strong>Email:</strong>
-                </h4>
-                <p class="p-contact">info.inmobiliaria@dwilliams.com.ar</p>
-            </div>
-
-            <div class="info-item-contact">
-                <h4 class="general-text"><i class="bi bi-telephone  gold-color icon-contact">
-                    </i><strong>Telefono:</strong>
-                </h4>
-                <p class="p-contact">0266-4422515</p>
-            </div>
-            <div class="social-media-cont">
-                <h4 class="general-text"><i class="bi bi-instagram  gold-color icon-contact">
-                    </i><strong>Instagram</strong>
-                </h4>
-                <h4 class="general-text"><i class="bi bi-facebook  gold-color icon-contact">
-                    </i><strong>Facebook</strong>
-                </h4>
-                <h4 class="general-text"><i class="bi bi-linkedin  gold-color icon-contact">
-                    </i><strong>Linkedin</strong>
-                </h4>
-            </div>
-
-        </div>
-
-        <div class="info-contact-cont">
-            <h4 class="general-text consults"><strong>Dejanos tu consulta</strong></h4>
+            <h4 class="header-text consults center-text"><strong>Dejanos tu consulta</strong></h4>
             <form>
                 <div class="mb-4 input-item-cont">
                     <input type="text" class="form-control input-style" id="exampleInputEmail1"
@@ -81,15 +36,6 @@
                 <button type="submit" class="btn-dw">Enviar</button>
             </form>
 
-        </div>
-    </div>
-    <div class="block-cont">
-            <div class="mapouter">
-                <div class="gmap_canvas round-borders"><iframe class="gmap_iframe round-borders" width="100%"
-                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-                        src="https://maps.google.com/maps?width=1197&amp;height=240&amp;hl=en&amp;q=9 de julio 748&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a
-                        href="https://piratebay-proxys.com/">Piratebay</a></div>
-            </div>
         </div>
 </section>
 
