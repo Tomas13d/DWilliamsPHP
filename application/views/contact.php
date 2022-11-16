@@ -1,5 +1,5 @@
 <section class="header-port contact-backgorung">
-    <h3 class="textP">Contactanos</h3>
+    <h3 class="textP">Informacion de Contacto</h3>
     <div class="logo-devolps">
         <svg width="80" height="80" viewBox="0 0 1371 1371" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -10,9 +10,6 @@
 </section>
 
 <section class="historia-cont">
-    <div class="title-sub">
-        <h5 class="subTitle-text"><strong>Informacion de Contacto</strong></h5>
-    </div>
     <div class="contenido-hist">
         <div class="info-contact-cont">
             <div class="info-item-contact">
@@ -55,9 +52,9 @@
 
         </div>
 
-        <div class="info-contact-cont">
+        <div class="info-contact-cont form-cont">
             <h4 class="general-text consults"><strong>Dejanos tu consulta</strong></h4>
-            <form>
+            <form class="form-cont">
                 <div class="mb-4 input-item-cont">
                     <input type="text" class="form-control input-style" id="exampleInputEmail1"
                         aria-describedby="emailHelp" placeholder="Nombre">

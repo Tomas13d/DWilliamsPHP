@@ -21,16 +21,11 @@
         <div class="opacity-layer">
             <h3 class="textP">Mas de 35 años acompanandote</h3>
             <div class="search-cont">
-                <div class="dropdown">
-                    <button class="btn btn-search dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        Operacion
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Venta</a></li>
-                        <li><a class="dropdown-item" href="#">Alquiler</a></li>
-                    </ul>
-                </div>
+                <select class="form-select select-search" aria-label="Default select example">
+                    <option selected>Operacion</option>
+                    <option value="1">Venta</option>
+                    <option value="2">Alquiler</option>
+                </select>
                 <div class="search-input-cont">
                     <input type="text" name="search" id="search" placeholder="Busca por localidad, barrio o zona"
                         class="search-input">
@@ -58,7 +53,7 @@
         <p class="subTitle-text">Elija la propiedad ideal para usted y su familia</p>
     </div>
     <div class="home-cards-container">
-      <?= $cards ?>
+        <?= $cards ?>
     </div>
     <div class="button-center">
         <button class="btn-dw button-center margin-btn">Ver Mas</button>
@@ -188,8 +183,3 @@
     </div>
 
 </section>
-
-
-
-
-

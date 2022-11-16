@@ -11,7 +11,7 @@
 
 <section class="appraisal-cont">
         <div class="info-contact-cont">
-            <h4 class="header-text consults center-text"><strong>Dejanos tu consulta</strong></h4>
+            <h4 class="header-text center-text"><strong>Dejanos tu consulta</strong></h4>
             <form>
                 <div class="mb-4 input-item-cont">
                     <input type="text" class="form-control input-style" id="exampleInputEmail1"

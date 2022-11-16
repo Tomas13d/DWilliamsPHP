@@ -144,11 +144,25 @@
 	justify-content: center;
 }
 
-.btn-search {
+.select-search {
+	width: 150px;
 	color: #fff;
 	border: 1px solid #fff;
 	font-size: 18px;
-	font-family: "Roboto", sans-serif;
+	border-radius: 4px;
+	background-color: rgba(255, 255, 255, 0);
+}
+
+.select-search option{
+	color: #000;
+	background-color: #fff;
+}
+
+.btn-search {
+	width: 150px;
+	color: #fff;
+	border: 1px solid #fff;
+	font-size: 18px;
 	border-radius: 4px;
 	background-color: rgba(255, 255, 255, 0);
 }
@@ -674,7 +688,6 @@
   .contenido-hist{
 	display: flex;
 	align-items: center;
-	margin: 30px 60px 30px 60px;
   }
 
   .history-cont{
@@ -682,6 +695,7 @@
 	width: 75%;
   }
 
+ 
   .center-text{
 	text-align: center;
   }
@@ -727,6 +741,14 @@
 	
 }
 
+.consults{
+	margin-left: 80px;
+}
+
+.form-cont{
+	margin-left: 80px;
+  }
+
 .p-contact{
 	margin-left: 30px;
 }
@@ -757,7 +779,7 @@
 
 .block-cont{
 	width: 100% ;
-	padding: 20px 5%;
+	padding: 20px 0px;
 }
 
 
