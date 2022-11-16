@@ -10,8 +10,8 @@ class Home extends CI_Controller {
 			$cards .=  $this->load->view('components/card', ["cardId" => $i ], true);
 		 }
 		$this->load->view('head');
-		$this->load->view('navbar');
+		$this->load->view('components/navbar');
 		$this->load->view('home', ["cards" => $cards]);
-		$this->load->view('footer');
+		$this->load->view('components/footer');
 	}
 }

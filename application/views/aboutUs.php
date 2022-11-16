@@ -12,10 +12,9 @@
 <section class="vision-sect">
     <div class="our-props-title">
         <h3 class="header-text">Nuestras Empresa</h3>
-        <p class="subTitle-text text-box-2">Distinguir nuestro servicio.<br>
-            Permitir el desarrollo profesional de nuestra gente, generando igualdad de oportunidades, capacitando y
+        <p class="subTitle-text text-box-2">Distinguir nuestro servicio y permitir el desarrollo profesional de nuestra gente, generando igualdad de oportunidades, capacitando y
             motivando para alcanzar los objetivos de nuestra empresa.<br>
-            Alcanzar la relación con clientes, colegas, proveedores, inversores, desarrolladores, etc. como forma de
+            Alcanzamos relaciones con clientes, colegas, proveedores, inversores, desarrolladores, como forma de
             manifestar nuestro rol de empresa independiente, comprometida con su entorno. </p>
     </div>
 </section>

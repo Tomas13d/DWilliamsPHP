@@ -13,6 +13,7 @@
 .header-text {
 	font-size: 28px;
     font-weight: 700;
+	margin-bottom: 20px;
 }
 
 .subTitle-text {
@@ -586,7 +587,7 @@
 
 .vision-sect{
 	width: 100%;
-	padding: 60px 5%;
+	padding: 10% 5%;
 }
 
 .text-box{

@@ -20,16 +20,22 @@
         <div class="image-dev-over-cont">
             <img class="dev-img-bord" src="<?php echo base_url('public/assets/images/altosdelCerro.jpg');?>"
                 alt="altos del cerro">
+            <a href="<?php echo base_url('IndividualDev');?>">
                 <div class="over-see">
-                  <div class="see-dev">Ver Desarrollo</div>
+                    <div class="see-dev">Ver Desarrollo</div>
                 </div>
+            </a>
         </div>
+
         <div class="image-dev-over-cont">
-        <img class="dev-img-bord" src="<?php echo base_url('public/assets/images/Villa.jpg');?>" alt="villa magdalena">
+            <img class="dev-img-bord" src="<?php echo base_url('public/assets/images/Villa.jpg');?>"
+                alt="villa magdalena">
+            <a href="<?php echo base_url('IndividualDev');?>">
                 <div class="over-see">
-                  <div class="see-dev">Ver Desarrollo</div>
+                    <div class="see-dev">Ver Desarrollo</div>
                 </div>
+
         </div>
-       
+
     </article>
 </section>
