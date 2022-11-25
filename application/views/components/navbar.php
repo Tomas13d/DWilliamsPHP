@@ -111,7 +111,7 @@
                             </li>
                             <li class="nav-item li-margin">
                                 <a class="nav-link link-letters general-text" aria-current="page"
-                                    href="<?php echo base_url('Developments');?>">Desarrollos</a>
+                                    href="<?php echo base_url('developments');?>">Desarrollos</a>
                             </li>
                             <li class="nav-item li-margin">
                                 <a class="nav-link link-letters general-text" href="<?php echo base_url('Appraisal');?>">Tasaciones</a>
