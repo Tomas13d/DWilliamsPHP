@@ -1,28 +1,22 @@
 <section class="vision-sect">
     <div class="title-sub">
-        <h5 class="header-text individaul-title"><strong>Villa Magdalena</strong></h5>
+        <h5 class="header-text individaul-title"><strong>Potrero de los Funes</strong></h5>
     </div>
-    <div id="carouselExampleIndicators" class="carousel slide carrousel-margin" data-bs-ride="true">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
-        </div>
+    <div class="row justify-content-between carrousel-contact-info-cont">
+        <div class="col col-9 description-and-details-cont">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img src="<?php echo base_url('public/assets/images/Terrazas_del_Portezuelo.jpg');?>"
-                    class="d-block w-100 dev-img-carousel" alt="Potrero de los Funes">
+                    class="d-block w-100 prop-img-carousel" alt="Potrero de los Funes">
             </div>
             <div class="carousel-item">
                 <img src="<?php echo base_url('public/assets/images/Terrazas_del_Portezuelo.jpg');?>"
-                    class="d-block w-100 dev-img-carousel" alt="Potrero de los Funes">
+                    class="d-block w-100 prop-img-carousel" alt="Potrero de los Funes">
             </div>
             <div class="carousel-item">
                 <img src="<?php echo base_url('public/assets/images/Terrazas_del_Portezuelo.jpg');?>"
-                    class="d-block w-100 dev-img-carousel" alt="Potrero de los Funes">
+                    class="d-block w-100 prop-img-carousel" alt="Potrero de los Funes">
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -36,6 +30,13 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
+        </div>
+        <div class="col col-3 individual-view-cont contact-individual">
+
+        </div>
+  
+</div>
+  
 
     <div class="general-individual-info-cont row justify-content-between">
         <div class="description-and-details-cont col col-9">

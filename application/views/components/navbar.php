@@ -1,5 +1,5 @@
 <header>
-        <nav class="navbar navbar-expand-lg fixed-top navbar-color">
+        <nav class="navbar navbar-expand-lg  navbar-color">
             <div class="container-fluid lt-m util-flex">
                 <a class="no-link" href="<?php echo base_url('/');?>">
                 <div class="logo-cont">
@@ -111,16 +111,16 @@
                             </li>
                             <li class="nav-item li-margin">
                                 <a class="nav-link link-letters general-text" aria-current="page"
-                                    href="<?php echo base_url('developments');?>">Desarrollos</a>
+                                    href="<?php echo base_url('desarrollos');?>">Desarrollos</a>
                             </li>
                             <li class="nav-item li-margin">
-                                <a class="nav-link link-letters general-text" href="<?php echo base_url('Appraisal');?>">Tasaciones</a>
+                                <a class="nav-link link-letters general-text" href="<?php echo base_url('tasaciones');?>">Tasaciones</a>
                             </li>
                             <li class="nav-item li-margin">
-                                <a class="nav-link link-letters general-text" href="<?php echo base_url('AboutUs');?>">Nosotros</a>
+                                <a class="nav-link link-letters general-text" href="<?php echo base_url('nosotros');?>">Nosotros</a>
                             </li>
                             <li class="nav-item li-margin">
-                                <a class="nav-link contact-bold link-letters general-text" href="<?php echo base_url('Contact');?>">Contacto</a>
+                                <a class="nav-link contact-bold link-letters general-text" href="<?php echo base_url('contacto');?>">Contacto</a>
                             </li>
                         </ul>
                     </div>
