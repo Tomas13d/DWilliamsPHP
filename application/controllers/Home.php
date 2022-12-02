@@ -10,10 +10,14 @@ class Home extends CI_Controller {
 
 	public function index()
 	{
-		$result = $this->Estate_model->get_active_estate_rent();
+		$result = $this->Estate_model->getActiveEstatesInRent();
 		$cards =  "";
+	
 		foreach ($result as $index => $estate) {
-
+			$photos = $this->Estate_model->getPhotosFromEstate($estate->rel);
+			$extraIcons = $this->Estate_model->getExtrasFromEstate($estate->rel);
+			$estate->images = $photos;
+			$estate->extraIcons = $extraIcons;
 			$cards .=  $this->load->view('components/card', ["cardId" => $index, "estate" => $estate ], true);
 		}
 

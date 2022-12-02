@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link href="<?php echo base_url('public/assets/css/home.css');?>" rel="stylesheet">
     <link rel="shortcut icon" href="<?php echo base_url('public/assets/images/LogoVoid.png');?>" type="image/png" />
+    <script src="https://kit.fontawesome.com/cc5fa15e95.js" crossorigin="anonymous"></script>
     <title>d' williams</title>
 </head>
 
