@@ -303,10 +303,18 @@
     font-family: "Roboto", sans-serif;
 }
 
+.card-description-cont{
+	height: 200px;
+	width: 300px;
+	max-height: 200px;
+	text-overflow: ellipsis;
+	background-color: aqua;
+}
+
 .card-description {
 	font-size: 18px;
 	font-weight: 300;
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", sans-serif;	
 }
 
 .icons-container {
@@ -418,8 +426,7 @@
 .dev-description {
 	text-align: right;
 }
-.dev-description-reverse {
-}
+
 
 .margin-dev-btn {
 	margin-top: 10px;
