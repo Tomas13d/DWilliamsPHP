@@ -261,10 +261,11 @@
 	width: 300px;
 	height: 400px;
 	border-radius: 6px;
+	background-color: aqua;
 }
 
 .top-box {
-	background-color: #641315;
+	background-color: #132964;
 	border-top-left-radius: 6px;
 	border-bottom-right-radius: 6px;
 	max-height: 25px;
@@ -308,13 +309,18 @@
 	width: 300px;
 	max-height: 200px;
 	text-overflow: ellipsis;
-	background-color: aqua;
+	background-color: aquamarine;
 }
 
 .card-description {
 	font-size: 18px;
 	font-weight: 300;
     font-family: "Roboto", sans-serif;	
+	height: 200px;
+	width: 300px;
+	max-height: 200px;
+	text-overflow: ellipsis;
+	background-color: aquamarine;
 }
 
 .icons-container {

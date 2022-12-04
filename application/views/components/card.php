@@ -41,17 +41,19 @@
     </div>
     <div class="info-container">
         <h5 class="card-title"><strong><?= $estate->title ?></strong>
-            <h5>
-                <p class="card-description"><?= $estate->details ?></p>
-                <div class="icons-container">
-                    <?php
+        </h5>
+        <div class="card-description-cont">
+            <p class="card-description"><?= $estate->details ?></p>
+        </div>
+        <div class="icons-container">
+            <?php
                foreach (($estate->extraIcons) as $index => $icon){ ?>
-                    <i class="<?= $icon->icon?> icon-text"><?= $icon->name?></i>
+            <i class="<?= $icon->icon?> icon-text"> <?= $icon->name?></i>
 
-                    <?php    
+            <?php    
            };?>
 
-                </div>
+        </div>
     </div>
 
 </div>

@@ -10,10 +10,15 @@ class Home extends CI_Controller {
 
 	public function index()
 	{
-		$result = $this->Estate_model->getActiveEstatesInRent();
-		$cards =  "";
+		$estatesInRent = $this->Estate_model->getActiveEstatesInRentLimited(8);
+		$estatesForSale = array();
+		if(count($estatesInRent) < 8) {
+			$estatesForSale = $this->Estate_model->getActiveEstatesForSaleLimited(8-count($estatesInRent));
+		}
+		$cardsEstates = array_merge($estatesInRent, $estatesForSale);
+		$cards = "";
 	
-		foreach ($result as $index => $estate) {
+		foreach ($cardsEstates as $index => $estate) {
 			$photos = $this->Estate_model->getPhotosFromEstate($estate->rel);
 			$extraIcons = $this->Estate_model->getExtrasFromEstate($estate->rel);
 			$estate->images = $photos;

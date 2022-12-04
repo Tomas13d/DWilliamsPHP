@@ -7,7 +7,24 @@ class Estate_model extends CI_Model {
     
     public function getActiveEstatesInRent()
     {
-            $query = $this->db->query('SELECT * FROM estate WHERE ACTIVE = 1 AND op = 2');
+            $query = $this->db->query("SELECT * FROM estate WHERE (ACTIVE = 1 AND op = 2) AND id_lang=1");
+            return $query->result();
+    }
+    public function getActiveEstatesInRentLimited($limit)
+    {
+            $query = $this->db->query("SELECT * FROM estate WHERE (ACTIVE = 1 AND op = 2) AND id_lang=1 LIMIT $limit");
+            return $query->result();
+    }
+
+    public function getActiveEstatesForSale()
+    {
+            $query = $this->db->query('SELECT * FROM estate WHERE (ACTIVE = 1 AND op = 1) AND id_lang=1');
+            return $query->result();
+    }
+
+    public function getActiveEstatesForSaleLimited($limit)
+    {
+            $query = $this->db->query("SELECT * FROM estate WHERE (ACTIVE = 1 AND op = 1) AND id_lang=1 LIMIT $limit");
             return $query->result();
     }
 
