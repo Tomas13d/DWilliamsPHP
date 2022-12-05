@@ -259,13 +259,11 @@
 	margin: 20px;
 	padding: 0;
 	width: 300px;
-	height: 400px;
 	border-radius: 6px;
-	background-color: aqua;
 }
 
 .top-box {
-	background-color: #132964;
+	background-color: #641315;
 	border-top-left-radius: 6px;
 	border-bottom-right-radius: 6px;
 	max-height: 25px;
@@ -305,25 +303,22 @@
 }
 
 .card-description-cont{
-	height: 200px;
-	width: 300px;
-	max-height: 200px;
-	text-overflow: ellipsis;
-	background-color: aquamarine;
+	height: 80px;
+	max-height: 80px;
+	min-height: 80px;
+	overflow: hidden;
 }
 
 .card-description {
 	font-size: 18px;
 	font-weight: 300;
     font-family: "Roboto", sans-serif;	
-	height: 200px;
-	width: 300px;
-	max-height: 200px;
 	text-overflow: ellipsis;
-	background-color: aquamarine;
+	
 }
 
 .icons-container {
+	margin-top: 10px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
