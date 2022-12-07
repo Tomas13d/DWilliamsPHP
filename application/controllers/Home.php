@@ -19,8 +19,8 @@ class Home extends CI_Controller {
 		$cards = "";
 	
 		foreach ($cardsEstates as $index => $estate) {
-			$photos = $this->Estate_model->getPhotosFromEstate($estate->rel);
-			$extraIcons = $this->Estate_model->getExtrasFromEstate($estate->rel);
+			$photos = $this->Estate_model->getPhotosFromEstateLimited($estate->rel, 4);
+			$extraIcons = $this->Estate_model->getExtrasFromEstateLimited($estate->rel, 4);
 			$estate->images = $photos;
 			$estate->extraIcons = $extraIcons;
 			$cards .=  $this->load->view('components/card', ["cardId" => $index, "estate" => $estate ], true);

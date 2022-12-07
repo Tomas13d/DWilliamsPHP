@@ -45,11 +45,12 @@
         <div class="card-description-cont">
             <p class="card-description"><?= $estate->details ?></p>
         </div>
-        <div class="icons-container">
+        <div class="icons-container row">
             <?php
                foreach (($estate->extraIcons) as $index => $icon){ ?>
-            <i class="<?= $icon->icon?> icon-text"> <?= $icon->name?></i>
-
+               <div class="col col-6">
+                   <i class="<?= $icon->icon?> icon-text"></i><strong><?= $icon->name?></strong>
+               </div>
             <?php    
            };?>
 

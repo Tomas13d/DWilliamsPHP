@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Arvo&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Arvo&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;600;700&display=swap');
+
 
 * {
 	padding: 0;
 	margin: 0;
-    font-family: "Roboto", sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /*GENERAL STYLES*/
@@ -28,7 +28,6 @@
 
 .general-text {
 	font-size: 20px;
-    font-family: "Roboto", sans-serif;
 }
 
 .gold-color {
@@ -83,7 +82,6 @@
 }
 
 .service-letters {
-	font-family: "Roboto", sans-serif;
 	font-style: normal;
 	font-weight: 300;
 	font-size: 14px;
@@ -93,7 +91,6 @@
 }
 .link-letters {
 	color: #fff;
-	font-family: "Roboto", sans-serif;
 	font-weight: 300;
 	letter-spacing: 0.5px;
 }
@@ -114,6 +111,9 @@
 	font-weight: 600;
 }
 
+i{
+	font-family: 'Montserrat', sans-serif;
+}
 
 /*HOME*/
 /* HOME -> carrousel */
@@ -121,8 +121,8 @@
 	height: auto;
 	width: auto;
 	max-width: 100%;
-	max-height: 720px;
-	min-height: 720px;
+	max-height: 100vh;
+	min-height: 100vh;
 	min-width: 100%;
 }
 
@@ -200,7 +200,7 @@
 .search-input::placeholder {
 	color: #fff;
 	font-size: 18px;
-	font-family: "Roboto", sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .search-input:focus {
@@ -210,7 +210,7 @@
 .search-input:read-write {
 	color: #fff;
 	font-size: 18px;
-	font-family: "Roboto", sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .logo-dw {
@@ -219,8 +219,7 @@
 }
 
 .textP {
-	font-family: "Roboto", sans-serif;
-	font-weight: 300;
+	font-weight: 400;
 	font-size: 45px;
 	line-height: 59px;
 	color: #fff;
@@ -247,9 +246,9 @@
 
 /* HOME -> card images */
 .home-cards-container {
-	width: 90%;
+	width: 100%;
+	padding: 20px 5% 0px 5%;
 	height: auto;
-	margin: 20px 5% 0px 5%;
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
@@ -297,9 +296,10 @@
 	padding: 10px;
 }
 
+
+
 .card-title {
 	font-size: 20px;
-    font-family: "Roboto", sans-serif;
 }
 
 .card-description-cont{
@@ -312,23 +312,19 @@
 .card-description {
 	font-size: 18px;
 	font-weight: 300;
-    font-family: "Roboto", sans-serif;	
 	text-overflow: ellipsis;
 	
 }
 
 .icons-container {
 	margin-top: 10px;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	align-items: center;
 }
 
 .icon-text {
-	margin: 10px 10px 10px 0px;
+	margin: 10px 5px 10px 0px;
 	font-size: 16px;
-	font-weight: 400;
+	font-weight: 200;
+	text-transform: capitalize;
 }
 
 .button-center {
@@ -345,7 +341,6 @@
 	border-style: none;
 	border-radius: 4px;
 	font-size: 20px;
-    font-family: "Roboto", sans-serif;
 }
 
 .btn-dw:hover {
@@ -426,6 +421,7 @@
 
 .dev-description {
 	text-align: right;
+	margin-left: 5px;
 }
 
 
@@ -457,7 +453,6 @@
 	color: #fff;
 	font-size: 24px;
     font-weight: 400;
-    font-family: "Roboto", sans-serif;
 }
 
 /* HOME -> contact section */
@@ -466,7 +461,6 @@
 	width: 75%;
 	padding: 10px;
 	margin: 20px auto;
-	height: 400px;
 	border-radius: 6px;
 	box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.76);
 }
@@ -500,6 +494,7 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: baseline;
+	flex-wrap: wrap;
 	height: 150px;
 }
 
