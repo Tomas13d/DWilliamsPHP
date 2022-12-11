@@ -74,7 +74,7 @@
             </div>
         </a>
 
-        <div>
+        <div class="links-footer">
             <h6 class="small-text text-roboto footer-link margin-link">Venta</h6>
             <h6 class="small-text text-roboto footer-link margin-link">Alquileres</h6>
             <h6 class="small-text text-roboto footer-link margin-link">Desarrollos</h6>

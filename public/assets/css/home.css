@@ -573,6 +573,15 @@ i{
 	color: #d6ab55;
 }
 
+@media only screen and (max-width : 900px) {
+	.links-footer{
+		display: none;
+	}
+	.footer-info-cont{
+		display: block;
+	}
+}
+
 
 /* DEVELOPMENTS */
 .header-port {
