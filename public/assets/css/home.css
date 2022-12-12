@@ -51,9 +51,14 @@
 
 .aling-text-right{
 	text-align: right;
-	margin-left: 100px;
+	margin-left: 110px;
 }
 
+.mobile-only{
+	margin-top: 20px;
+	text-align: center;
+	display: none;
+}
 .logo-cont {
 	padding: 0;
 	margin: 0;
@@ -173,7 +178,6 @@ i{
 }
 
 .btn-search {
-	width: 150px;
 	color: #fff;
 	border: 1px solid #fff;
 	font-size: 18px;
@@ -249,20 +253,20 @@ i{
 }
 
 .section-space {
-	padding-top: 60px;
-	padding-bottom: 60px;
+	padding: 60px 5%;
 }
 
 /* HOME -> card images */
 .home-cards-container {
 	width: 100%;
-	padding: 20px 5% 0px 5%;
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
 }
 
 .card {
+	min-width: 300px;
+	max-width: 300px;;
 	margin-bottom: 20px;
 	padding: 0;
 	width: 300px;
@@ -362,6 +366,7 @@ i{
 
 /* HOME -> service section */
 .service-section {
+	padding: 10px;
 	margin-bottom: 20px;
 	width: 100%;
 	height: 150px;
@@ -375,6 +380,8 @@ i{
 
 .item-serv-cont {
 	margin-top: 15px;
+	margin-left: 2px;
+	margin-right: 2px;
 	display: flex;
 	flex-direction: column;
 	justify-content: baseline;
@@ -387,6 +394,14 @@ i{
 	text-align: center;
 }
 
+.service-icons{
+	width: 70px;
+	height: 70px;
+}
+
+
+
+
 /* HOME -> developments section */
 .development-card {
 	display: flex;
@@ -394,7 +409,7 @@ i{
 	width: 80%;
 	margin: 60px auto 0px auto;
 	border-radius: 6px;
-	box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.76);
+	border: 1px solid rgba(7, 7, 7, 0.215);
 }
 
 .dev-img {
@@ -466,11 +481,12 @@ i{
 /* HOME -> contact section */
 
 .contact-container {
-	width: 75%;
+	width: 90%;
 	padding: 10px;
+	height: auto;
 	margin: 20px auto;
 	border-radius: 6px;
-	box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.76);
+	border: 1px solid rgba(7, 7, 7, 0.215);
 }
 
 .round-borders {
@@ -503,11 +519,15 @@ i{
 	justify-content: space-between;
 	align-items: baseline;
 	flex-wrap: wrap;
-	height: 150px;
+	flex-direction: row;
 }
 
 .icon-contact {
 	font-size: 24px;
+}
+.info-cont-data{
+	width: auto;
+	margin: 0px 5px;
 }
 
 /* FOOTER */
@@ -573,14 +593,7 @@ i{
 	color: #d6ab55;
 }
 
-@media only screen and (max-width : 900px) {
-	.links-footer{
-		display: none;
-	}
-	.footer-info-cont{
-		display: block;
-	}
-}
+
 
 
 /* DEVELOPMENTS */
@@ -927,4 +940,82 @@ i{
 
 .contact-individual{
 	height: 540px ;
+}
+
+
+@media only screen and (max-width : 900px) {
+	/* Footer */
+	.links-footer{
+		display: none;
+	}
+	.footer-info-cont{
+		display: block;
+	}
+
+	/* HOME */
+	.development-card {
+		display: block;
+		text-align: center;
+	}
+	.dev-img {
+		width: 100%;
+		border-top-left-radius: 6px;
+		border-top-right-radius: 6px;
+		border-bottom-left-radius: 0px;
+	}
+	.dev-img-reverse {
+		width: 100%;
+		border-top-left-radius: 6px;
+		border-bottom-right-radius: 0px;
+	}
+	.dev-info {
+		margin-top: 10px;
+		align-items: center;
+		width: 90%;
+	}
+	
+	.dev-info-reverse {
+		margin-top: 10px;
+		align-items: center;
+		width: 90%;
+	}
+	
+	.dev-description {
+		text-align: center;
+	}
+	.margin-dev-btn {
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	.contact-container {
+		width: 90%;
+	}
+}
+
+@media only screen and (max-width : 750px) {
+	/* service section */
+	.description-icon {
+		font-size: 12px;
+	}
+	.service-icons{
+		width: 40px;
+		height: 40px;
+	}
+
+	.eslogan-1{
+		width: 90%;
+		font-size: 16px;
+	}
+
+	.home-cards-container {
+		justify-content: center;
+	}
+
+	.search-cont{
+		display: none;
+	}
+
+	.mobile-only{
+		display: block;
+	}
 }
