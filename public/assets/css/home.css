@@ -623,7 +623,7 @@ i{
 
 .vision-sect{
 	width: 100%;
-	padding: 10% 5% 7% 5%;
+	padding: 60px 5% 60px 5%;
 }
 
 .text-box{
@@ -635,18 +635,15 @@ i{
 	width: 80%;
 	margin: 0 auto;
 }
-
 .image-dev-over-cont{
 	position: relative;
 }
-
 .dev-img-cont{
+	margin: 0 auto;
 	width: 60%;
-	margin: 100px auto 20px auto;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-
 }
 
 .dev-img-bord{
@@ -655,9 +652,7 @@ i{
 	min-height: 300px;
 	min-width: 300px;
 	border-radius: 6px;
-
 }
-
 
  .over-see{
     width: 300px;
@@ -670,7 +665,6 @@ i{
     opacity: 0;
 	border-radius: 6px;
   }
-
 
 .over-see:hover{
     opacity: 1;
@@ -989,6 +983,17 @@ i{
 	}
 	.contact-container {
 		width: 90%;
+	}
+	.dev-img-cont{
+		justify-content: center;
+		flex-wrap: wrap;
+		width: 90%;
+	}
+	.text-box{
+		width: 90%;
+	}
+	.dev-img-bord{
+		margin-bottom: 20px;
 	}
 }
 
