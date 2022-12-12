@@ -1,5 +1,6 @@
 <section>
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="mobile-wallpaper"></div>
         <div class="carousel-inner">
             <div class="carousel-item">
                 <img src="<?php echo base_url('public/assets/images/San_Luis1.jpg');?>"

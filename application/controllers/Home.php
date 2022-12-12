@@ -25,6 +25,7 @@ class Home extends CI_Controller {
 			$estate->extraIcons = $extraIcons;
 			$cards .=  $this->load->view('components/card', ["cardId" => $index, "estate" => $estate ], true);
 		}
+		
 
 		$this->load->view('head');
 		$this->load->view('components/navbar');

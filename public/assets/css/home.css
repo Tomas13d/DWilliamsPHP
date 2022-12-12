@@ -938,6 +938,15 @@ i{
 	height: 540px ;
 }
 
+.mobile-wallpaper{
+	display: none;
+	background-image: url(../images/mobile_wallpaper.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+		width: 100%;
+		height: 100vh;
+}
+
 
 @media only screen and (max-width : 900px) {
 	/* Footer */
@@ -1046,5 +1055,29 @@ i{
 		width: 90%;
 		margin-left: 40px;
 		display: block;
+	}
+	.mobile-wallpaper{
+		display: block;
+	}
+	.carrousel-img{
+		display: none !important;
+	}
+	.opacity-layer{
+		background: rgba(0, 0, 0, 0.1);
+	}
+	.aboutUs-background {
+		background-image: url("../images/nosotrosMobile.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+	  }
+	  .appraisal-backgorung {
+		background-image: url("../images/tasacionesMobile.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.contact-backgorung{
+		background-image: url("../images/contactMobile.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
 	}
 }

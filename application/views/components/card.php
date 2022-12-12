@@ -16,7 +16,7 @@
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img src="<?php echo base_url('public/assets/images/San_Luis1.jpg');?>" class="d-block w-100 card-img"
-                    alt="...">
+                    alt='<?= $estate->title ?>'>
             </div>
             <!-- recorre las imagenes para el carrousel -->
             <?php
@@ -48,9 +48,9 @@
         <div class="icons-container row">
             <?php
                foreach (($estate->extraIcons) as $index => $icon){ ?>
-               <div class="col col-6">
-                   <i class="<?= $icon->icon?> icon-text"></i><strong><?= $icon->name?></strong>
-               </div>
+            <div class="col col-6">
+                <i class="<?= $icon->icon?> icon-text"></i><strong><?= $icon->name?></strong>
+            </div>
             <?php    
            };?>
 
