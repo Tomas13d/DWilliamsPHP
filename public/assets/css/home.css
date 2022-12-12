@@ -376,6 +376,7 @@ i{
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
+	box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.868);
 }
 
 .item-serv-cont {
@@ -467,6 +468,7 @@ i{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.868);
 }
 
 .eslogan-1 {
