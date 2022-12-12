@@ -639,7 +639,7 @@ i{
 	position: relative;
 }
 .dev-img-cont{
-	margin: 0 auto;
+	margin: 60px auto 0px auto;
 	width: 60%;
 	display: flex;
 	justify-content: space-between;
@@ -716,6 +716,10 @@ i{
 	border-bottom: 1px solid rgb(186, 186, 186);
   }
 
+  .alberto-img{
+	margin: 0 auto;
+  }
+
   .contenido-hist{
 	display: flex;
 	align-items: center;
@@ -737,7 +741,6 @@ i{
 
   .equipo-cont{
 	margin-top: 30px;
-	width: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -746,7 +749,6 @@ i{
 
   
   .member-cont{
-	width: 251px;
 	margin: 40px 100px;
 	text-align: center;
   }
@@ -998,6 +1000,9 @@ i{
 	.info-contact-cont{
 		width: 80%;
 	}
+	.history-cont{
+		margin-top: 20px;
+	}
 }
 
 @media only screen and (max-width : 750px) {
@@ -1024,6 +1029,22 @@ i{
 	}
 
 	.mobile-only{
+		display: block;
+	}
+	.contenido-hist{
+		display: block;
+	}
+	.form-cont{
+		margin: 60px auto;
+		width: 90%;
+		text-align: center;
+	}
+	.consults{
+		margin: 0 auto;
+	}
+	.social-media-cont{
+		width: 90%;
+		margin-left: 40px;
 		display: block;
 	}
 }

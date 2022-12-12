@@ -39,13 +39,13 @@
                 <p class="p-contact">0266-4422515</p>
             </div>
             <div class="social-media-cont">
-                <h4 class="general-text"><i class="bi bi-instagram  gold-color icon-contact">
+                <h4 class="general-text social-text"><i class="bi bi-instagram gold-color icon-contact">
                     </i><strong>Instagram</strong>
                 </h4>
-                <h4 class="general-text"><i class="bi bi-facebook  gold-color icon-contact">
+                <h4 class="general-text"><i class="bi bi-facebook gold-color icon-contact">
                     </i><strong>Facebook</strong>
                 </h4>
-                <h4 class="general-text"><i class="bi bi-linkedin  gold-color icon-contact">
+                <h4 class="general-text"><i class="bi bi-linkedin gold-color icon-contact">
                     </i><strong>Linkedin</strong>
                 </h4>
             </div>

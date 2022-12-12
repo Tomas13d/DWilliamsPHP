@@ -21,7 +21,7 @@
 
 <section class="historia-cont">
     <div class="contenido-hist">
-        <img src="<?php echo base_url('public/assets/images/Don.jpg');?>" class="d-block" alt="Demo Williams">
+        <img src="<?php echo base_url('public/assets/images/Don.jpg');?>" class="d-block alberto-img" alt="Demo Williams">
         <div class="history-cont">
             <h5 class="subTitle-text"><strong>Historia</strong></h5>
             <p class="history general-text">El 17 de febrero del año 1988, el Martillero Público, Williams Alberto Demo,
