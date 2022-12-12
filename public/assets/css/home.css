@@ -995,6 +995,9 @@ i{
 	.dev-img-bord{
 		margin-bottom: 20px;
 	}
+	.info-contact-cont{
+		width: 80%;
+	}
 }
 
 @media only screen and (max-width : 750px) {
