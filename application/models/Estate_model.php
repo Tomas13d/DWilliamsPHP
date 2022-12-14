@@ -137,7 +137,11 @@ class Estate_model extends CI_Model {
         public function getAboutInfo()
         {
                 $query = $this->db->query("SELECT * FROM about WHERE id_lang=1");
-                return $query->result();
+                if($query->result()){
+                        return $query->result()[0];
+                } else {
+                        return $query->result();
+                }
         }
         
  

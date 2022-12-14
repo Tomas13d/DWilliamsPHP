@@ -35,8 +35,10 @@
         <div class="title-sub">
                     <h5 class="subTitle-text"><strong>Contactanos</strong></h5>
                 </div>
-                <div>
-                    <h4 class="general-text"><i class=""></i> <?= $icon->name?></h4>
+                <div class="row contact-cont-ind">
+                    <h4 class="general-text col col-12"><i class="bi bi-telephone-inbound contact-inv-icons"></i> <?=$contactInfo->phone?></h4>
+                    <h4 class="general-text col col-12"><i class="bi bi-envelope contact-inv-icons"></i> <?=$contactInfo->email?></h4>
+                    <h4 class="general-text col col-12"><i class="bi bi-geo-alt contact-inv-icons"></i> <?=$contactInfo->address?></h4>
                 </div>
         </div>
 
@@ -63,15 +65,6 @@
                 </div>
                 <div class="icons-container row d-flex justify-content-between">
                     <div class="col col-3">
-                        <h4 class="general-text"><i class="bi bi-tag"></i> Precio:</h4>
-                        <div class="extras-box-maker">
-                            <p class="general-text"> <?php
-                if($individualEstate->price){
-                    echo "$individualEstate->currency $individualEstate->price";
-                } else {
-                    echo 'Consultar';
-                }?></p>
-                        </div>
                         <h4 class="general-text"><i class="bi bi-key"></i> Operacion:</h4>
                         <div class="extras-box-maker">
                             <p class="general-text"> <?php
@@ -87,6 +80,15 @@
             break;
     }
     ?></p>
+                        </div>
+                        <h4 class="general-text"><i class="bi bi-tag"></i> Precio:</h4>
+                        <div class="extras-box-maker">
+                            <p class="general-text"> <?php
+                if($individualEstate->price){
+                    echo "$individualEstate->currency $individualEstate->price";
+                } else {
+                    echo 'Consultar';
+                }?></p>
                         </div>
 
                     </div>

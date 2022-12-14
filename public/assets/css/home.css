@@ -856,7 +856,13 @@ i {
 	text-align: center;
 	width: 90%;
 }
-
+.contact-inv-icons{
+	color: #641315;
+}
+.contact-cont-ind{
+	border: 1px solid red;
+	overflow: hidden;
+}
 .extra-invidual {
 	margin-bottom: 20px;
 }

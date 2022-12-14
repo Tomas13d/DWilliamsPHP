@@ -14,6 +14,7 @@ class IndividualProp extends CI_Controller {
 		$estateRel = number_format(substr(parse_url($url, PHP_URL_QUERY), 7, 2));
 
 		$individualEstate = $this->Estate_model->getSingleEstate($estateRel);
+		$contactInfo = $this->Estate_model-> getAboutInfo();
 		$estatesInRent = $this->Estate_model->getActiveEstatesInRentLimited(3);
 		$estatesForSale = array();
 		if(count($estatesInRent) < 3) {
@@ -31,7 +32,7 @@ class IndividualProp extends CI_Controller {
 
 		$this->load->view('head');
 		$this->load->view('components/navbar');
-        $this->load->view('individualProp', ["smallCards" => $smallcards, "individualEstate" => $individualEstate]);
+        $this->load->view('individualProp', ["smallCards" => $smallcards, "individualEstate" => $individualEstate, "contactInfo" => $contactInfo]);
         $this->load->view('components/footer');
 	}
 }
