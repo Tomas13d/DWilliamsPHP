@@ -18,6 +18,8 @@
                 <img src="<?php echo base_url('public/assets/images/San_Luis1.jpg');?>" class="d-block w-100 card-img"
                     alt='<?= $estate->title ?>'>
             </div>
+            <a class="nav-link link-letters general-text" aria-current="page"
+                                href="<?php echo base_url("individualProp?estate=$estate->rel");?>">
             <!-- recorre las imagenes para el carrousel -->
             <?php
                
@@ -28,6 +30,7 @@
             </div>
             <?php
                     };?>
+                    </a>
 
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="<?php echo "#card".$cardId?>"

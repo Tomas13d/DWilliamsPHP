@@ -21,22 +21,6 @@
         </div>
         <div class="opacity-layer">
             <h3 class="textP">Mas de 35 años acompanandote</h3>
-            <div class="search-cont">
-                <select class="form-select select-search" aria-label="Default select example">
-                    <option selected>Operacion</option>
-                    <option value="1">Venta</option>
-                    <option value="2">Alquiler</option>
-                </select>
-                <div class="search-input-cont">
-                    <input type="text" name="search" id="search" placeholder="Busca por localidad, barrio o zona"
-                        class="search-input">
-                </div>
-                <button class="btn btn-search" type="button">
-                    Buscar
-                </button>
-               
-
-            </div>
             <button class="btn btn-search mobile-only" type="button">
                     Ver Propiedades
                 </button>

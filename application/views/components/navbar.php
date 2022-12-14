@@ -163,37 +163,14 @@
                         aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
-
                     <ul class="navbar-nav mb-2 mb-lg-0 aling-text-right">
-                        <!-- ventas dropdown -->
-                        <li class="nav-item dropdown li-margin">
-                            <a class="nav-link dropdown-toggle link-letters general-text" href="#" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Venta
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
+                    <li class="nav-item li-margin">
+                            <a class="nav-link link-letters general-text" aria-current="page"
+                                href="<?php echo base_url('desarrollos');?>">Venta</a>
                         </li>
-                        <!-- alquileres dropdown -->
-                        <li class="nav-item dropdown li-margin">
-                            <a class="nav-link dropdown-toggle link-letters general-text" href="#" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Alquileres
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
+                        <li class="nav-item li-margin">
+                            <a class="nav-link link-letters general-text" aria-current="page"
+                                href="<?php echo base_url('desarrollos');?>">Alquileres</a>
                         </li>
                         <li class="nav-item li-margin">
                             <a class="nav-link link-letters general-text" aria-current="page"

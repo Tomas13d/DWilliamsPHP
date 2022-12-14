@@ -1,63 +1,119 @@
 <section class="vision-sect">
     <div class="title-sub">
-        <h5 class="header-text individaul-title"><strong>Potrero de los Funes</strong></h5>
+        <h5 class="header-text individaul-title"><strong><?=$individualEstate->title?></strong></h5>
     </div>
     <div class="row justify-content-between carrousel-contact-info-cont">
         <div class="col col-9 description-and-details-cont">
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="<?php echo base_url('public/assets/images/Terrazas_del_Portezuelo.jpg');?>"
-                    class="d-block w-100 prop-img-carousel" alt="Potrero de los Funes">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="<?php echo base_url('public/assets/images/Terrazas_del_Portezuelo.jpg');?>"
+                            class="d-block w-100 prop-img-carousel" alt="Potrero de los Funes">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="<?php echo base_url('public/assets/images/Terrazas_del_Portezuelo.jpg');?>"
+                            class="d-block w-100 prop-img-carousel" alt="Potrero de los Funes">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="<?php echo base_url('public/assets/images/Terrazas_del_Portezuelo.jpg');?>"
+                            class="d-block w-100 prop-img-carousel" alt="Potrero de los Funes">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-            <div class="carousel-item">
-                <img src="<?php echo base_url('public/assets/images/Terrazas_del_Portezuelo.jpg');?>"
-                    class="d-block w-100 prop-img-carousel" alt="Potrero de los Funes">
-            </div>
-            <div class="carousel-item">
-                <img src="<?php echo base_url('public/assets/images/Terrazas_del_Portezuelo.jpg');?>"
-                    class="d-block w-100 prop-img-carousel" alt="Potrero de los Funes">
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
         </div>
         <div class="col col-3 individual-view-cont contact-individual">
-
+        <div class="title-sub">
+                    <h5 class="subTitle-text"><strong>Contactanos</strong></h5>
+                </div>
+                <div>
+                    <h4 class="general-text"><i class=""></i> <?= $icon->name?></h4>
+                </div>
         </div>
-  
-</div>
-  
 
-    <div class="general-individual-info-cont row justify-content-between">
+    </div>
+
+
+    <div class="general-individual-info-cont row">
         <div class="description-and-details-cont col col-9">
             <div class="description-cont individual-view-cont">
                 <div class="title-sub">
                     <h5 class="subTitle-text"><strong>Descripción</strong></h5>
                 </div>
-                <p class="general-text description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-                    eligendi similique, ad excepturi, voluptatibus praesentium exercitationem pariatur dicta ea nobis
-                    ipsam. Labore nam animi quos voluptatum accusantium qui laudantium hic!</p>
+                <p class="general-text description">
+                <?php
+                if($individualEstate->details){
+                    echo $individualEstate->details;
+                } else {
+                    echo 'No hay descripción';
+                }?></p>
             </div>
             <div class="details-cont individual-view-cont">
                 <div class="title-sub">
                     <h5 class="subTitle-text"><strong>Detalles</strong></h5>
                 </div>
+                <div class="icons-container row d-flex justify-content-between">
+                    <div class="col col-3">
+                        <h4 class="general-text"><i class="bi bi-tag"></i> Precio:</h4>
+                        <div class="extras-box-maker">
+                            <p class="general-text"> <?php
+                if($individualEstate->price){
+                    echo "$individualEstate->currency $individualEstate->price";
+                } else {
+                    echo 'Consultar';
+                }?></p>
+                        </div>
+                        <h4 class="general-text"><i class="bi bi-key"></i> Operacion:</h4>
+                        <div class="extras-box-maker">
+                            <p class="general-text"> <?php
+    switch($individualEstate->op){
+        case "1": 
+            echo "En Venta";
+            break;
+        case "2": 
+            echo "En Aquiler";
+            break;
+        case "3": 
+            echo "Venta|Alquiler";
+            break;
+    }
+    ?></p>
+                        </div>
+
+                    </div>
+                    <div class="col col-9">
+                        <div class="row">
+
+                            <?php
+               foreach (($individualEstate->extraIcons) as $index => $icon){ ?>
+                            <div class="col col-4 extra-invidual">
+                                <h4 class="general-text"><i class="<?= $icon->icon?>"></i> <?= $icon->name?></h4>
+                            </div>
+                            <?php    
+           };?>
+                        </div>
+                    </div>
+
+
+                </div>
             </div>
         </div>
         <div class="more-properties-cont individual-view-cont col col-3">
-            <h5 class="subTitle-text"><strong>Más Propiedades</strong></h5>
+            <div class="title-sub">
+                <h5 class="subTitle-text"><strong>Más Propiedades</strong></h5>
+            </div>
+
             <div class="small-card-cont">
-            <?= $smallCards ?>
+                <?= $smallCards ?>
             </div>
         </div>
     </div>
@@ -67,27 +123,67 @@
         <div class="title-sub">
             <h5 class="subTitle-text"><strong>Ubicación</strong></h5>
         </div>
-        <div class="location-box">
-            <div>
-                <h4 class="general-text margin-item-develo"><strong>Dirección:</strong> <i>Los Paraísos, San Luis</i>
-                <h4>
-                <h4 class="general-text margin-item-develo"><strong>Ciudad:</strong> <i>San Luis</i>
-                            <h4>
-                    
-                        </div>
-                        <div class="second-location-box">
-                        <h4 class="general-text margin-item-develo"><strong>Zona:</strong> <i>Potrero de los Funes</i>
+        <div class="location-box row">
+            <div class="col col-6">
+                <h4 class="general-text margin-item-develo"><strong>Dirección:</strong> <i><?php
+                if($individualEstate->address){
+                    echo $individualEstate->address;
+                } else {
+                    echo 'Consultar';
+                }?></i>
                     <h4>
-                            
+                        <h4 class="general-text margin-item-develo"><strong>Ciudad:</strong> <i><?php
+                if($individualEstate->state && $individualEstate->state->name){
+                    echo $individualEstate->state->name;
+                } else {
+                    echo 'Consultar';
+                }?></i>
+                            <h4>
+
+            </div>
+            <div class="second-location-box col col-6">
+                <h4 class="general-text margin-item-develo"><strong>Localidad:</strong> <i>
+                        <?php
+                if($individualEstate->city && $individualEstate->city->name){
+                     echo $individualEstate->city->name;
+                } else {
+                    echo 'Consultar';
+                }?>
+                    </i>
+                </h4>
+                <h4 class="general-text margin-item-develo"><strong>Zona:</strong> <i>
+                        <?php
+                if($individualEstate->disctrict && $individualEstate->disctrict->name){
+                        echo $individualEstate->disctrict->name; 
+                } else {
+                    echo 'Consultar';
+                }?></i>
+                </h4>
             </div>
         </div>
         <div class="mapouter round-borders">
+
+            <?php
+            if($individualEstate->coordinates){
+            ?>
             <div class="gmap_canvas round-borders"><iframe class="gmap_iframe round-borders" width="100%"
                     frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-                    src="https://maps.google.com/maps?q=villa%20magdalena%20potrero%20de%20los%20funes&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe><a
-                    href="https://piratebay-proxys.com/">Piratebay</a></div>
+                    src=<?="https://maps.google.com/maps?q=$individualEstate->coordinates&hl=es;z=14&amp;output=embed"?>>;
+                </iframe>
+            </div>
+            <?php
+            }else {
+                ?>
+            <div class="no-available-map">
+                <p>Mapa No disponible</p>
+            </div>
+
+            <?php
+            }
+                ?>
         </div>
     </div>
+
 
 
 

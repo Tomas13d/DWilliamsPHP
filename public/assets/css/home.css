@@ -1,18 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Arvo&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;600;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;600;700&display=swap");
 
 * {
 	padding: 0;
 	margin: 0;
-    font-family: 'Montserrat', sans-serif;
+	font-family: "Montserrat", sans-serif;
 }
 
 /*GENERAL STYLES*/
 
 .header-text {
 	font-size: 28px;
-    font-weight: 700;
+	font-weight: 700;
 	margin-bottom: 20px;
 }
 
@@ -23,7 +22,6 @@
 
 .small-text {
 	font-size: 16px;
-
 }
 
 .general-text {
@@ -33,7 +31,6 @@
 .gold-color {
 	color: #d6ab55;
 }
-
 
 /*NAVBAR*/
 .navbar-color {
@@ -45,19 +42,18 @@
 	width: 100%;
 }
 
-.offcanvas-style{
+.offcanvas-style {
 	background-color: rgba(0, 0, 0, 0.6) !important;
 }
 
-.aling-text-right{
+.aling-text-right {
 	text-align: right;
-	margin-left: 110px;
+	margin-left: 160px;
 }
 
-.mobile-only{
+.mobile-only {
 	margin-top: 20px;
 	text-align: center;
-	display: none;
 }
 .logo-cont {
 	padding: 0;
@@ -125,8 +121,8 @@
 	font-weight: 600;
 }
 
-i{
-	font-family: 'Montserrat', sans-serif;
+i {
+	font-family: "Montserrat", sans-serif;
 }
 
 /*HOME*/
@@ -172,7 +168,7 @@ i{
 	background-color: rgba(255, 255, 255, 0);
 }
 
-.select-search option{
+.select-search option {
 	color: #000;
 	background-color: #fff;
 }
@@ -213,7 +209,7 @@ i{
 .search-input::placeholder {
 	color: #fff;
 	font-size: 18px;
-	font-family: 'Montserrat', sans-serif;
+	font-family: "Montserrat", sans-serif;
 }
 
 .search-input:focus {
@@ -223,7 +219,7 @@ i{
 .search-input:read-write {
 	color: #fff;
 	font-size: 18px;
-	font-family: 'Montserrat', sans-serif;
+	font-family: "Montserrat", sans-serif;
 }
 
 .logo-dw {
@@ -266,7 +262,7 @@ i{
 
 .card {
 	min-width: 300px;
-	max-width: 300px;;
+	max-width: 300px;
 	margin-bottom: 20px;
 	padding: 0;
 	width: 300px;
@@ -308,13 +304,11 @@ i{
 	padding: 10px;
 }
 
-
-
 .card-title {
 	font-size: 20px;
 }
 
-.card-description-cont{
+.card-description-cont {
 	height: 80px;
 	max-height: 80px;
 	min-height: 80px;
@@ -325,7 +319,6 @@ i{
 	font-size: 18px;
 	font-weight: 300;
 	text-overflow: ellipsis;
-	
 }
 
 .icons-container {
@@ -395,13 +388,10 @@ i{
 	text-align: center;
 }
 
-.service-icons{
+.service-icons {
 	width: 70px;
 	height: 70px;
 }
-
-
-
 
 /* HOME -> developments section */
 .development-card {
@@ -448,7 +438,6 @@ i{
 	margin-left: 5px;
 }
 
-
 .margin-dev-btn {
 	margin-top: 10px;
 }
@@ -477,7 +466,7 @@ i{
 	margin-top: 15px;
 	color: #fff;
 	font-size: 24px;
-    font-weight: 400;
+	font-weight: 400;
 }
 
 /* HOME -> contact section */
@@ -527,7 +516,7 @@ i{
 .icon-contact {
 	font-size: 24px;
 }
-.info-cont-data{
+.info-cont-data {
 	width: auto;
 	margin: 0px 5px;
 }
@@ -560,10 +549,10 @@ i{
 	font-size: 18px;
 }
 
-.footer-link{
+.footer-link {
 	font-weight: 300;
 }
-.margin-link{
+.margin-link {
 	margin-bottom: 10px;
 }
 
@@ -585,7 +574,6 @@ i{
 	text-align: center;
 }
 
-
 .no-link {
 	text-decoration: none;
 	color: #fff;
@@ -594,9 +582,6 @@ i{
 .no-link:hover {
 	color: #d6ab55;
 }
-
-
-
 
 /* DEVELOPMENTS */
 .header-port {
@@ -614,33 +599,34 @@ i{
 	text-align: center;
 }
 
-.development-background{
+.development-background {
 	background-image: url("../images/barrios.jpg");
 }
 
-.logo-devolps{
+.logo-devolps {
 	position: absolute;
 	top: 445px;
 }
 
-.vision-sect{
+.vision-sect {
+	margin-top: 60px;
 	width: 100%;
 	padding: 60px 5% 60px 5%;
 }
 
-.text-box{
+.text-box {
 	width: 60%;
 	margin: 0 auto;
 }
 
-.text-box-2{
+.text-box-2 {
 	width: 80%;
 	margin: 0 auto;
 }
-.image-dev-over-cont{
+.image-dev-over-cont {
 	position: relative;
 }
-.dev-img-cont{
+.dev-img-cont {
 	margin: 60px auto 0px auto;
 	width: 60%;
 	display: flex;
@@ -648,7 +634,7 @@ i{
 	align-items: center;
 }
 
-.dev-img-bord{
+.dev-img-bord {
 	width: 300px;
 	height: 300px;
 	min-height: 300px;
@@ -656,40 +642,39 @@ i{
 	border-radius: 6px;
 }
 
- .over-see{
-    width: 300px;
+.over-see {
+	width: 300px;
 	height: 300px;
-    background-color: #6413149b;
-    position: absolute;
-    left: 0;
-    top: 0;
-    transition: 0.3s;
-    opacity: 0;
+	background-color: #6413149b;
+	position: absolute;
+	left: 0;
+	top: 0;
+	transition: 0.3s;
+	opacity: 0;
 	border-radius: 6px;
-  }
+}
 
-.over-see:hover{
-    opacity: 1;
+.over-see:hover {
+	opacity: 1;
 	cursor: pointer;
 	transform: scale(1.1);
-  }
+}
 
-
-  .see-dev{
+.see-dev {
 	cursor: pointer;
-    color: #fff;
-    font-size: 20px;
+	color: #fff;
+	font-size: 20px;
 	font-weight: 300;
-    padding: 5px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: 0.3s;
+	padding: 5px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	transition: 0.3s;
 	border-radius: 4px;
-  }
+}
 
-  .aboutUs-img{
+.aboutUs-img {
 	height: auto;
 	width: auto;
 	max-width: 100%;
@@ -702,121 +687,112 @@ i{
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-  }
-  
-  .aboutUs-background {
+}
+
+.aboutUs-background {
 	background-image: url("../images/handshake.jpg");
-  }
+}
 
-
-  /* ABOUT US */
-  .historia-cont{
+/* ABOUT US */
+.historia-cont {
 	padding: 60px 5%;
-  }
+}
 
-.title-sub{
+.title-sub {
 	border-bottom: 1px solid rgb(186, 186, 186);
-  }
+}
 
-  .alberto-img{
+.alberto-img {
 	margin: 0 auto;
-  }
+}
 
-  .contenido-hist{
+.contenido-hist {
 	display: flex;
 	align-items: center;
-  }
+}
 
-  .history-cont{
+.history-cont {
 	margin-left: 60px;
 	width: 75%;
-  }
+}
 
- 
-  .center-text{
+.center-text {
 	text-align: center;
-  }
+}
 
-  .history{
+.history {
 	margin-top: 20px;
-  }
+}
 
-  .equipo-cont{
+.equipo-cont {
 	margin-top: 30px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
-  }
+}
 
-  
-  .member-cont{
+.member-cont {
 	margin: 40px 100px;
 	text-align: center;
-  }
+}
 
-
-  .team-img{
+.team-img {
 	margin-bottom: 20px;
-  }
+}
 
-   /* CONTACT */
+/* CONTACT */
 
-.contact-backgorung{
+.contact-backgorung {
 	background-image: url("../images/ContactImg.jpg");
 }
 
-.info-contact-cont{
+.info-contact-cont {
 	width: 50%;
 	margin: 0 auto;
 }
 
-.info-item-contact{
+.info-item-contact {
 	margin: 20px 20px 40px 20px;
-	
 }
 
-.consults{
+.consults {
 	margin-left: 80px;
 }
 
-.form-cont{
+.form-cont {
 	margin-left: 80px;
-  }
+}
 
-.p-contact{
+.p-contact {
 	margin-left: 30px;
 }
 
-
-.input-item-cont{
+.input-item-cont {
 	margin: 20px 20px 40px 0px;
 }
 
-
-
-.input-style{
-	background: #EDEDED;
+.input-style {
+	background: #ededed;
 	border: none;
 	margin-bottom: 35px;
 }
 
-.input-style::placeholder{
+.input-style::placeholder {
 	color: black;
 }
 
-.social-media-cont{
+.social-media-cont {
 	margin-left: 20px;
 	margin-right: 80px;
 	display: flex;
 	justify-content: space-between;
 }
 
-.block-cont{
-	width: 100% ;
+.block-cont {
+	width: 100%;
 	padding: 20px 0px;
 }
-
 
 /* APPRAISAL */
 
@@ -824,13 +800,13 @@ i{
 	background-image: url("../images/Contacting.jpg");
 }
 
-.appraisal-cont{
+.appraisal-cont {
 	padding: 60px 5%;
-  }
+}
 
 /* INDIVIDUAL DEVELOPMENT VIEW*/
 
-.individaul-title{
+.individaul-title {
 	margin-bottom: 0 !important;
 }
 
@@ -840,122 +816,145 @@ i{
 	border-radius: 6px;
 }
 
-.carrousel-margin{
+.carrousel-margin {
 	margin-top: 30px;
 }
 
-.general-individual-info-cont{
+.general-individual-info-cont {
 	width: 100%;
 	margin: 30px 0px !important;
 	padding: 0 !important;
-
+	height: auto;
+	display: flex;
+	justify-content: space-between;
 }
 
-.individual-view-cont{
+.individual-view-cont {
 	border: 1px solid rgb(207, 207, 207);
 	border-radius: 6px;
 }
 
-.description-and-details-cont{
+.description-and-details-cont {
 	padding: 0px 30px 0px 0px !important;
-	
 }
-.description-cont{
+.description-cont {
 	padding: 10px 15px;
-	height: 300px;
+	height: auto;
 	margin: 0 !important;
-	
 }
-.details-cont{
+.details-cont {
 	padding: 10px 15px;
 	margin: 30px 0px 0px 0px !important;
-	height: 300px;
+	height: auto;
 	flex-basis: 70%;
 }
-
-.more-properties-cont{
-	padding: 10px 15px;
+.extras-box-maker {
+	background-color: #641315;
+	border-top-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+	color: #fff;
+	text-align: center;
+	width: 90%;
 }
 
-.ubication-cont{
-	padding: 10px 15px;
-}
-
-.description{
-	margin-top: 10px;
-}
-.location-box{
-	display: flex;
-	justify-content: space-between;
-	margin-top: 20px;
-	width: 50%;
-}
-
-.margin-item-develo{
+.extra-invidual {
 	margin-bottom: 20px;
 }
-.small-card-cont{
-	margin: 25px 0px;
-	
+.more-properties-cont {
+	padding: 10px 15px;
+	max-height: auto;
 }
-.small-card{
+
+.ubication-cont {
+	padding: 10px 15px;
+}
+
+.description {
+	margin-top: 10px;
+}
+.location-box {
+	margin-top: 20px;
+}
+.no-available-map {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 200px;
+	background-color: #ededed;
+	border-radius: 6px;
+}
+
+.margin-item-develo {
+	margin-bottom: 20px;
+}
+.small-card-cont {
+	margin-top: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+.small-card {
 	display: flex;
 	align-items: center;
 	border-radius: 6px;
-	margin-bottom: 35px;
+	margin-top: 10px;
+	height: auto;
+	width: 100%;
+	text-overflow: ellipsis;
+	overflow-x: hidden;
 }
 
-.small-card:hover{
-	background-color: #EDEDED;
+.small-card:hover {
+	background-color: #ededed;
 	cursor: pointer;
 }
 
-
-.small-card-img{
-	width: 170px;
-	height: 150px;
-	max-width: 150px;
-	max-height: 150px;
+.small-card-img {
+	width: 120px;
+	height: 110px;
+	max-width: 120px;
+	max-height: 110px;
 	border-radius: 6px;
-
 }
 
-.small-card-info{
+.small-card-info {
 	margin-left: 10px;
 }
 
-.prop-img-carousel{
+.prop-img-carousel {
 	margin: 0;
 	height: 540px;
 	border-radius: 6px;
 }
 
-.carrousel-contact-info-cont{
+.carrousel-contact-info-cont {
 	width: 100%;
 	margin: 30px 0px !important;
 	padding: 0px !important;
 }
 
-.contact-individual{
-	height: 540px ;
+.contact-individual {
+	height: auto;
+	padding: 10px 15px;
 }
 
-.mobile-wallpaper{
+.mobile-wallpaper {
 	display: none;
 	background-image: url(../images/mobile_wallpaper.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
-		width: 100%;
-		height: 100vh;
+	width: 100%;
+	height: 100vh;
 }
 
-
-@media only screen and (max-width : 900px) {
+@media only screen and (max-width: 900px) {
 	/* Footer */
-	.links-footer{
+	.links-footer {
 		display: none;
 	}
-	.footer-info-cont{
+	.footer-info-cont {
 		display: block;
 	}
 
@@ -980,13 +979,13 @@ i{
 		align-items: center;
 		width: 90%;
 	}
-	
+
 	.dev-info-reverse {
 		margin-top: 10px;
 		align-items: center;
 		width: 90%;
 	}
-	
+
 	.dev-description {
 		text-align: center;
 	}
@@ -997,36 +996,36 @@ i{
 	.contact-container {
 		width: 90%;
 	}
-	.dev-img-cont{
+	.dev-img-cont {
 		justify-content: center;
 		flex-wrap: wrap;
 		width: 90%;
 	}
-	.text-box{
+	.text-box {
 		width: 90%;
 	}
-	.dev-img-bord{
+	.dev-img-bord {
 		margin-bottom: 20px;
 	}
-	.info-contact-cont{
+	.info-contact-cont {
 		width: 80%;
 	}
-	.history-cont{
+	.history-cont {
 		margin-top: 20px;
 	}
 }
 
-@media only screen and (max-width : 750px) {
+@media only screen and (max-width: 750px) {
 	/* service section */
 	.description-icon {
 		font-size: 12px;
 	}
-	.service-icons{
+	.service-icons {
 		width: 40px;
 		height: 40px;
 	}
 
-	.eslogan-1{
+	.eslogan-1 {
 		width: 90%;
 		font-size: 16px;
 	}
@@ -1035,49 +1034,46 @@ i{
 		justify-content: center;
 	}
 
-	.search-cont{
+	.search-cont {
 		display: none;
 	}
 
-	.mobile-only{
+	.contenido-hist {
 		display: block;
 	}
-	.contenido-hist{
-		display: block;
-	}
-	.form-cont{
+	.form-cont {
 		margin: 60px auto;
 		width: 90%;
 		text-align: center;
 	}
-	.consults{
+	.consults {
 		margin: 0 auto;
 	}
-	.social-media-cont{
+	.social-media-cont {
 		width: 90%;
 		margin-left: 40px;
 		display: block;
 	}
-	.mobile-wallpaper{
+	.mobile-wallpaper {
 		display: block;
 	}
-	.carrousel-img{
+	.carrousel-img {
 		display: none !important;
 	}
-	.opacity-layer{
+	.opacity-layer {
 		background: rgba(0, 0, 0, 0.1);
 	}
 	.aboutUs-background {
 		background-image: url("../images/nosotrosMobile.jpg");
 		background-size: cover;
 		background-repeat: no-repeat;
-	  }
-	  .appraisal-backgorung {
+	}
+	.appraisal-backgorung {
 		background-image: url("../images/tasacionesMobile.jpg");
 		background-size: cover;
 		background-repeat: no-repeat;
 	}
-	.contact-backgorung{
+	.contact-backgorung {
 		background-image: url("../images/contactMobile.jpg");
 		background-size: cover;
 		background-repeat: no-repeat;
