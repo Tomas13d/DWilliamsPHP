@@ -37,11 +37,9 @@
                 </div>
                 <div class="row contact-cont-ind">
                     <h4 class="general-text col col-12"><i class="bi bi-telephone-inbound contact-inv-icons"></i> <?=$contactInfo->phone?></h4>
-                    <h4 class="general-text col col-12"><i class="bi bi-envelope contact-inv-icons"></i> <?=$contactInfo->email?></h4>
                     <h4 class="general-text col col-12"><i class="bi bi-geo-alt contact-inv-icons"></i> <?=$contactInfo->address?></h4>
                 </div>
         </div>
-
     </div>
 
 

@@ -66,6 +66,8 @@
 }
 
 .logo-link {
+	width: 201px;
+	min-width: 201px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -860,7 +862,7 @@ i {
 	color: #641315;
 }
 .contact-cont-ind{
-	border: 1px solid red;
+	margin-top: 20px;
 	overflow: hidden;
 }
 .extra-invidual {
