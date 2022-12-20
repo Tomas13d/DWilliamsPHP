@@ -575,6 +575,10 @@ i {
 	font-size: 12px;
 	text-align: center;
 }
+.no-decoration{
+	text-decoration: none;
+	color: #000;
+}
 
 .no-link {
 	text-decoration: none;
@@ -860,10 +864,56 @@ i {
 }
 .contact-inv-icons{
 	color: #641315;
+	margin-right: 15px;
+}
+.consult-buton-link{
+	text-align: center;
+}
+
+.btn-asesor {
+	margin: 40px auto;
+	background-color: #641315;
+	width: 200px;
+	text-align: center;
+	color: #fff;
+	border-style: none;
+	border-radius: 4px;
+	font-size: 20px;
+}
+
+.btn-asesor:hover {
+	border: 2px solid #d6ab55;
+	color: #d6ab55;
+}
+.consult-buton-link-2{
+	display: none;
+	text-align: center;
+	margin: 40px auto 0px auto;
+	align-self: center;
+}
+
+.btn-final{
+	background-color: #641315;
+	width: 200px;
+	text-align: center;
+	color: #fff;
+	border-style: none;
+	border-radius: 4px;
+	font-size: 20px;
+}
+
+.btn-final:hover{
+	border: 2px solid #d6ab55;
+	color: #d6ab55;
+}
+
+.info-contact-header{
+	margin-bottom: 30px;
 }
 .contact-cont-ind{
-	margin-top: 20px;
+	margin-top: 40px;
 	overflow: hidden;
+	
 }
 .extra-invidual {
 	margin-bottom: 20px;
@@ -1060,7 +1110,7 @@ i {
 	.social-media-cont {
 		width: 90%;
 		margin-left: 40px;
-		display: block;
+		display:block;
 	}
 	.mobile-wallpaper {
 		display: block;
@@ -1085,5 +1135,19 @@ i {
 		background-image: url("../images/contactMobile.jpg");
 		background-size: cover;
 		background-repeat: no-repeat;
+	}
+	.contact-individual{
+		display: none;
+	}
+	.more-properties-cont{
+		display: none;
+	}
+	.description-and-details-cont{
+		width: 100%;
+		padding: 0 !important;
+	}
+	.consult-buton-link-2{
+		display: block;
+		
 	}
 }

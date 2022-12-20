@@ -4,9 +4,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Estate_model extends CI_Model {
         /* Estates */
-        public function getSingleEstate($estateRel)
+        public function getSingleEstateActive($estateRel)
         {
-                $query = $this->db->query("SELECT * FROM estate WHERE rel=$estateRel AND id_lang=1");
+                $query = $this->db->query("SELECT * FROM estate WHERE (rel=$estateRel AND ACTIVE= 1)AND id_lang=1");
                 $result = $query->result()[0];
                 $photos = $this->Estate_model->getPhotosFromEstate($estateRel);
 		$extraIcons = $this->Estate_model->getExtrasFromEstate($estateRel);

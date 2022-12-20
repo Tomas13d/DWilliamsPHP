@@ -13,7 +13,7 @@ class IndividualProp extends CI_Controller {
 		$url = $_SERVER['REQUEST_URI'];
 		$estateRel = number_format(substr(parse_url($url, PHP_URL_QUERY), 7, 3));
 
-		$individualEstate = $this->Estate_model->getSingleEstate($estateRel);
+		$individualEstate = $this->Estate_model->getSingleEstateActive($estateRel);
 		$contactInfo = $this->Estate_model-> getAboutInfo();
 		$estatesInRent = $this->Estate_model->getActiveEstatesInRentLimited(3);
 		$estatesForSale = array();

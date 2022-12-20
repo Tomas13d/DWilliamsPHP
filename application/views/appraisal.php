@@ -10,7 +10,7 @@
 </section>
 
 <section class="appraisal-cont">
-        <div class="info-contact-cont">
+        <div class="info-contact-cont" id="form-contact">
             <h4 class="header-text center-text"><strong>Dejanos tu consulta</strong></h4>
             <form>
                 <div class="mb-4 input-item-cont">
