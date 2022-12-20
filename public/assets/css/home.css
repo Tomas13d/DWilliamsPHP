@@ -1007,6 +1007,20 @@ i {
 	height: 100vh;
 }
 
+
+/* FILTER SISTEM */
+.results{
+	margin: 2px;
+}
+
+.header-options{
+	display: flex;
+	align-items: flex-end;
+}
+.items-space{
+	margin-right: 20px;
+}
+
 @media only screen and (max-width: 900px) {
 	/* Footer */
 	.links-footer {
