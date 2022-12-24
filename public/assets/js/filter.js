@@ -82,29 +82,56 @@ const addFilterUrl = (key, value) => {
 }
 const removeFilterUrl = (key, value) => {
     let urlQuery = window.location.search
-    if(urlQuery){
+    if (urlQuery) {
+        let oneQuery = ""
+        for (let i = urlQuery.indexOf(key); i <= urlQuery.length; i++) {
+            if ( urlQuery[i] === "&" || urlQuery[i] === undefined) {
+                
+                break
+            } else {
+                oneQuery += urlQuery[i]
+            }
+        }
+        console.log("oneQuery -->", oneQuery);
+        let oneQueryLength = oneQuery.length
+        let newQuery = ""
+        if (oneQuery[oneQuery.indexOf(value) - 1] === "+") {
+            newQuery = oneQuery.replace(`+${value}`, "")
+        }
+        if (oneQuery[oneQuery.indexOf(value) - 1] === "=") {
+            newQuery = oneQuery.replace(value, "")
+        }
+        
+        let newURL = urlQuery.split("")
+        newURL.splice(urlQuery.indexOf(key), oneQueryLength, newQuery)
+         if (newURL[newURL.indexOf(key)+key.length + 1] === "&" || newURL[newURL.indexOf(key)+key.length + 1] === undefined) {
+            newURL.splice(newURL.indexOf(newQuery), newQuery.length-1)
+        }
+           window.location.replace(`/filterSystem${newURL.join("")}`) 
+
+
 
     }
 
 
-    
+
 }
 
 const checkboxInputs = document.querySelectorAll('input[type="checkbox"]')
 checkboxInputs.forEach(element => {
     let urlQuery = window.location.search
-    if(urlQuery){
+    if (urlQuery) {
         let splited = splitURL(urlQuery)
         splited.forEach(query => {
-            if(query[0] === element.accessKey){
+            if (query[0] === element.accessKey) {
                 let values = query[1].split("+")
                 values.forEach(value => {
-                    if(value === element.dataset.rel){
+                    if (value === element.dataset.rel) {
                         element.checked = true
                         const chipContent = document.querySelector(".chip-cont")
                         const noChip = document.querySelector('.no-filters')
                         if (noChip) noChip.remove()
-                         chipContent.appendChild(createChip(element.value)) 
+                        chipContent.appendChild(createChip(element.value.replaceAll("-", " ")))
                     }
                 })
             }
@@ -120,8 +147,9 @@ checkboxInputs.forEach(element => {
         } else {
             const allChips = chipContent.childNodes
             allChips.forEach((chip) => {
-                if (chip.firstChild && chip.firstChild.innerHTML === e.target.value) chip.remove()
+                if (chip.firstChild && chip.firstChild.innerHTML === e.target.value.replaceAll("-", " ")) chip.remove()
             })
+            removeFilterUrl(e.target.accessKey, e.target.dataset.rel)
             if (allChips.length === 1) {
                 const noChipMessage = document.createElement('p')
                 noChipMessage.classList.add('text-filter')

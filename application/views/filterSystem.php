@@ -34,7 +34,7 @@
                             <li><input type="checkbox" class="form-check-input" id="alquiler" value="Alquiler" data-rel="2" accesskey="op">
                                 <label class="form-check-label text-filter" for="exampleCheck1">Alquiler</label>
                             </li>
-                            <li><input type="checkbox" class="form-check-input" id="alquiler-venta" value="Alquiler y Venta" data-rel="3" accesskey="categoryRel">
+                            <li><input type="checkbox" class="form-check-input" id="alquiler-venta" value="Alquiler y Venta" data-rel="3" accesskey="op">
                                 <label class="form-check-label text-filter" for="exampleCheck1">Alquiler y Venta</label>
                             </li>
                         </ul>
@@ -45,9 +45,11 @@
                         <a class="nav-link no-decoration title-sub" href="#"> Tipo de Propiedad <i class="bi bi-caret-right"></i></a>
                         <ul class="submenu collapse">
                             <?php
-                            foreach ($estateTypes as $index => $type) { ?>
+                            foreach ($estateTypes as $index => $type) { 
+                               
+                                ?>
                                 <li>
-                                    <input type="checkbox" class="form-check-input"  value=<?=$type->name?> data-rel=<?=$type->rel?> accesskey="categoryRel">
+                                    <input type="checkbox" class="form-check-input"  value=<?=str_replace(" ", "-", $type->name);?> data-rel=<?=$type->rel?> accesskey="categoryRel">
                                     <label class="form-check-label text-filter" ><?=$type->name?></label>
                                 </li>
                             <?php
@@ -60,12 +62,10 @@
                         <a class="nav-link no-decoration title-sub" > Dormitorios <i class="bi bi-caret-right"></i></a>
                         <ul class="submenu collapse">
                         <?php
-                            foreach ($estateSubtypes as $index => $subtype) { 
-                                $value = explode(" ",$subtype->name)
-                                ?>
+                            foreach ($estateSubtypes as $index => $subtype) {  ?>
                             
                                 <li>
-                                    <input type="checkbox" class="form-check-input"  value=<?=$value[0]."".$value[1]?>  data-rel=<?=$subtype->rel?> accesskey="subcategoryRel">
+                                    <input type="checkbox" class="form-check-input" value=<?=str_replace(" ", "-", $subtype->name)?>  data-rel=<?=$subtype->rel?> accesskey="subcategoryRel">
                                     <label class="form-check-label text-filter" ><?=$subtype->name?></label>
                                 </li>
                             <?php

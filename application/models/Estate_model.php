@@ -153,8 +153,7 @@ class Estate_model extends CI_Model
         public function getEstateSubtypes($categoriRel)
         {
                 $query = $this->db->query("SELECT * FROM subcategory WHERE categoryRel=$categoriRel AND id_lang=1 ");
+                
                 return $query->result();
-                
-                
         }
 }
