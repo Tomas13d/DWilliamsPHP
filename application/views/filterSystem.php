@@ -88,18 +88,23 @@
 
             </div>
         </div>
+        <?php
+        if ($estatesResult > 0) { ?>
 
-        <div class="cards-container-filter">
-            
+            <div class="cards-container-filter">
                 <?= $filterEstates ?>
                 <div class="pagination">
                     <?= $pagination ?>
                 </div>
-        
 
-
-        </div>
+            </div>
+        <?php } else { ?>
+            <div class="no-property-message">
+                <p class="general-text">Lo sentimos, no sea han encontrado propiedades con esas caracteristicas.</p>
+            </div>
+        <?php } ?>
     </div>
+
 
 
 

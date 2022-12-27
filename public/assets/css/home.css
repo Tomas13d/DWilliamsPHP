@@ -1033,7 +1033,6 @@ i {
 }
 .option-cards-cont{
 	display: flex;
-	justify-content: space-between;
 	align-items: flex-start;
 }
 .section-filter-cont{
@@ -1151,7 +1150,17 @@ input:checked{
 .digit a:hover{
 	color: #d6ab55;
 }
-
+.see-more-link{
+	text-decoration: none;
+}
+.no-property-message{
+	width: 100%;
+	margin-top: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
 
 @media only screen and (max-width: 900px) {
 	/* Footer */

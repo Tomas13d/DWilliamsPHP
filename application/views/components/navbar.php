@@ -166,11 +166,11 @@
                     <ul class="navbar-nav mb-2 mb-lg-0 aling-text-right">
                     <li class="nav-item li-margin">
                             <a class="nav-link link-letters general-text" aria-current="page"
-                                href="<?php echo base_url('desarrollos');?>">Venta</a>
+                                href="<?php echo base_url('/filterSystem?op=1&per_page=15');?>">Venta</a>
                         </li>
                         <li class="nav-item li-margin">
                             <a class="nav-link link-letters general-text" aria-current="page"
-                                href="<?php echo base_url('desarrollos');?>">Alquileres</a>
+                                href="<?php echo base_url('/filterSystem?op=2');?>">Alquileres</a>
                         </li>
                         <li class="nav-item li-margin">
                             <a class="nav-link link-letters general-text" aria-current="page"
