@@ -56,3 +56,5 @@ $route['desarrollos'] = "Developments/index";
 $route['nosotros'] = "AboutUs/index";
 $route['tasaciones'] = "Appraisal/index";
 $route['contacto'] = "Contact/index";
+$route['filterSystem'] = 'FilterSystem/index';
+$route['filterSystem/:num'] = 'FilterSystem/index';

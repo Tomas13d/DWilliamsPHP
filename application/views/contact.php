@@ -75,9 +75,10 @@
     </div>
     <div class="block-cont" id="ubication-map">
         <div class="mapouter">
-            <div class="gmap_canvas round-borders"><iframe class="gmap_iframe round-borders" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src=<?="https://maps.google.com/maps?q=-33.3063464,-66.33290110&hl=es;z=14&amp;output=embed" ?>>;
-                </iframe>
-            </div>
+        <div class="gmap_canvas round-borders"><iframe class="gmap_iframe round-borders" width="100%"
+                    frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                    src="https://maps.google.com/maps?width=1197&amp;height=240&amp;hl=en&amp;q=9 de julio 748&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a
+                    href="https://piratebay-proxys.com/">Piratebay</a></div>
         </div>
     </div>
 </section>
