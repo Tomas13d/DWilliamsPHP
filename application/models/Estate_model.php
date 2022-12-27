@@ -1,4 +1,7 @@
 <?php
+
+use LDAP\Result;
+
 defined('BASEPATH') or exit('No direct script access allowed');
 
 
@@ -148,12 +151,47 @@ class Estate_model extends CI_Model
         {
                 $query = $this->db->query("SELECT * FROM category WHERE id_lang=1");
                 return $query->result();
-                
         }
-        public function getEstateSubtypes($categoriRel)
+        public function getSingleEstateType($categoryRel)
         {
-                $query = $this->db->query("SELECT * FROM subcategory WHERE categoryRel=$categoriRel AND id_lang=1 ");
-                
+                $query = $this->db->query("SELECT * FROM category WHERE rel=$categoryRel");
+                return $query->result()[0];
+        }
+        public function getEstateSubtypes($subcategoriesRel)
+        {
+                $request = "SELECT * FROM subcategory WHERE";
+                if (gettype($subcategoriesRel) === "array") {
+                        foreach ($subcategoriesRel as $index => $rel) {
+                                if ($index === 0) {
+                                        $request = $request . " " . "categoryRel=" . $rel . " ";
+                                } else {
+                                        $request = $request . "OR" . " " . "categoryRel=" . $rel . " ";
+                                }
+                        }
+                } else {
+                        $request = "SELECT * FROM subcategory";
+                }
+
+                $query = $this->db->query($request);
+                return $query->result();
+        }
+        public function dinamicRequestFilter($queryArray)
+        {
+                $request = "SELECT * FROM estate WHERE (id_lang=1 AND active=1) ";
+                foreach ($queryArray as $queryName => $arrayOfRel) {
+                        $longQuery = "";
+                        foreach( $arrayOfRel as $index => $rel){
+                                if($index === count($arrayOfRel)-1){
+                                        $longQuery = $longQuery." ".$queryName."=".$rel;
+                                } else {
+                                        $longQuery = $longQuery." ".$queryName."=".$rel." "."OR";
+                                }
+                        }
+                        $request = $request." "."AND"." "."(".$longQuery.")";
+                       
+                        
+                }
+                $query = $this->db->query($request);
                 return $query->result();
         }
 }

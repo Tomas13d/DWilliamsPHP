@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Arvo&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap");
 
 * {
 	padding: 0;
@@ -14,10 +14,14 @@
 	font-weight: 700;
 	margin-bottom: 20px;
 }
+.text-filter-title{
+	font-weight:500;
+}
 
 .text-filter{
 	font-weight:400;
 }
+
 
 .subTitle-text {
 	font-size: 22px;
@@ -1108,6 +1112,9 @@ input:checked{
 	transform: rotate(90deg);
 }
 
+.title-subcategory{
+	margin-top: 10px;
+}
 
 @media only screen and (max-width: 900px) {
 	/* Footer */

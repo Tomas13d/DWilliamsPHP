@@ -85,14 +85,13 @@ const removeFilterUrl = (key, value) => {
     if (urlQuery) {
         let oneQuery = ""
         for (let i = urlQuery.indexOf(key); i <= urlQuery.length; i++) {
-            if ( urlQuery[i] === "&" || urlQuery[i] === undefined) {
-                
+            if (urlQuery[i] === "&" || urlQuery[i] === undefined) {
+
                 break
             } else {
                 oneQuery += urlQuery[i]
             }
         }
-        console.log("oneQuery -->", oneQuery);
         let oneQueryLength = oneQuery.length
         let newQuery = ""
         if (oneQuery[oneQuery.indexOf(value) - 1] === "+") {
@@ -101,16 +100,22 @@ const removeFilterUrl = (key, value) => {
         if (oneQuery[oneQuery.indexOf(value) - 1] === "=") {
             newQuery = oneQuery.replace(value, "")
         }
-        
+
         let newURL = urlQuery.split("")
         newURL.splice(urlQuery.indexOf(key), oneQueryLength, newQuery)
-         if (newURL[newURL.indexOf(key)+key.length + 1] === "&" || newURL[newURL.indexOf(key)+key.length + 1] === undefined) {
-            newURL.splice(newURL.indexOf(newQuery), newQuery.length-1)
+        newURL = newURL.join("")
+        let finalURL = ""
+        if (newURL[newURL.indexOf(key) + key.length + 1] === "&" || newURL[newURL.indexOf(key) + key.length + 1] === undefined || newURL[newURL.indexOf(key) + key.length + 1] === "") {
+            if (newURL[newURL.indexOf(key) - 1] === "&") {
+                finalURL = newURL.replace(`&${newQuery}`, "")
+            } else {
+                finalURL = newURL.replace(newQuery, "")
+            }
+
+        } else {
+            finalURL = newURL
         }
-           window.location.replace(`/filterSystem${newURL.join("")}`) 
-
-
-
+        window.location.replace(`/filterSystem${finalURL}`)
     }
 
 
@@ -140,7 +145,6 @@ checkboxInputs.forEach(element => {
 
 
     element.addEventListener('change', (e) => {
-        /* console.log('E ->', e) */
         const chipContent = document.querySelector(".chip-cont")
         if (e.target.checked) {
             addFilterUrl(e.target.accessKey, e.target.dataset.rel)
