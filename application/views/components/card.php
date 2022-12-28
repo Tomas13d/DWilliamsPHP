@@ -14,18 +14,14 @@
     ?></div>
     <div id="<?php echo "card".$cardId?>" class="carousel slide" data-bs-ride="false">
         <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="<?php echo base_url('public/assets/images/San_Luis1.jpg');?>" class="d-block w-100 card-img"
-                    alt='<?= $estate->title ?>'>
-            </div>
             <a class="nav-link link-letters general-text" aria-current="page"
                                 href="<?php echo base_url("individualProp?estate=$estate->rel");?>">
             <!-- recorre las imagenes para el carrousel -->
             <?php
                
-                        foreach (($estate->images) as $index => $image){ ?>
-            <div class="carousel-item">
-                <img src="../../../../images/cropImage.php?image=estate/<?= $image->image?>&t=0&l=0&w=300&h=200"
+                        foreach (($estate->images) as $index => $image){  ?>
+            <div class="<?php echo $index === 0 ? "carousel-item active": "carousel-item"?>">
+                <img src="../../../images/estate/<?= $image->image?>"
                     class="d-block w-100 card-img" alt="<?= $estate->title?>">
             </div>
             <?php

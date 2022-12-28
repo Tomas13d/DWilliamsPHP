@@ -6,15 +6,19 @@
         <div class="col col-9 description-and-details-cont">
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
                 <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="<?php echo base_url('public/assets/images/Terrazas_del_Portezuelo.jpg'); ?>" class="d-block w-100 prop-img-carousel" alt="Potrero de los Funes">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="<?php echo base_url('public/assets/images/Terrazas_del_Portezuelo.jpg'); ?>" class="d-block w-100 prop-img-carousel" alt="Potrero de los Funes">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="<?php echo base_url('public/assets/images/Terrazas_del_Portezuelo.jpg'); ?>" class="d-block w-100 prop-img-carousel" alt="Potrero de los Funes">
-                    </div>
+                <a class="nav-link link-letters general-text" aria-current="page"
+                                href="<?php echo base_url("individualProp?estate=$individualEstate->rel");?>">
+            <!-- recorre las imagenes para el carrousel -->
+            <?php
+               
+                        foreach (($individualEstate->images) as $index => $image){  ?>
+            <div class="<?php echo $index === 0 ? "carousel-item active": "carousel-item"?>">
+                <img src="../../images/estate/<?= $image->image?>"
+                    class="d-block w-100 prop-img-carousel" alt="<?= $individualEstate->title?>">
+            </div>
+            <?php
+                    };?>
+                    </a>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
