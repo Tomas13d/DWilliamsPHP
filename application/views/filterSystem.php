@@ -17,7 +17,7 @@
                         <!-- ACTIVE FILTERS -->
                         <li class="nav-item">
                             <div class="title-sub">
-                                <h5 class="general-text option-filter no-margin"><strong>Filtros Activos</h5>
+                                <h5 class="general-text option-filter no-margin"><strong>Filtros Activos</strong></h5>
                             </div>
                             <div class="chip-cont">
                             </div>
