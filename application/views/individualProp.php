@@ -6,28 +6,26 @@
         <div class="col col-9 description-and-details-cont">
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
                 <div class="carousel-inner">
-                <a class="nav-link link-letters general-text" aria-current="page"
-                                href="<?php echo base_url("individualProp?estate=$individualEstate->rel");?>">
-            <!-- recorre las imagenes para el carrousel -->
-            <?php
-               
-                        foreach (($individualEstate->images) as $index => $image){  ?>
-            <div class="<?php echo $index === 0 ? "carousel-item active": "carousel-item"?>">
-                <img src="../../images/estate/<?= $image->image?>"
-                    class="d-block w-100 prop-img-carousel" alt="<?= $individualEstate->title?>">
-            </div>
-            <?php
-                    };?>
-                    </a>
+                    <?php if (count($individualEstate->images) > 0) {
+                        foreach (($individualEstate->images) as $index => $image) {  ?>
+                            <div class="<?php echo $index === 0 ? "carousel-item active" : "carousel-item" ?>">
+                                <img src="../../images/estate/<?= $image->image ?>" class="d-block w-100 prop-img-carousel" alt="<?= $individualEstate->title ?>">
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        <?php }
+                    } else { ?>
+                        <img src="<?php echo base_url('public/assets/images/notImage.png'); ?>" class="d-block w-100  prop-img-carousel" alt="<?= $estate->title ?>">
+                    <?php } ?>
+
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+
             </div>
         </div>
         <div class="col col-3 individual-view-cont contact-individual">
@@ -51,9 +49,9 @@
                     <h4 class="general-text col col-12 info-contact-header"><i class="bi bi-geo-alt contact-inv-icons"></i> <?= $contactInfo->address ?></h4>
                 </a>
                 <a class="no-decoration consult-buton-link" href="<?php echo base_url('/tasaciones#form-contact'); ?>">
-                <button class="btn-asesor">Envianos tu</br> Consulta</button>
+                    <button class="btn-asesor">Envianos tu</br> Consulta</button>
                 </a>
-                
+
             </div>
 
         </div>
@@ -198,12 +196,12 @@
         </div>
     </div>
     <div class="consult-buton-link-2">
-    <a class="no-decoration" href="<?php echo base_url('/contacto#info-contact'); ?>">
-                <button class="btn-final">Contactanos</button>
-                </a>
+        <a class="no-decoration" href="<?php echo base_url('/contacto#info-contact'); ?>">
+            <button class="btn-final">Contactanos</button>
+        </a>
     </div>
 
- 
+
 
 
 

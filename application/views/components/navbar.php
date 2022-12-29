@@ -1,5 +1,5 @@
 <header>
-    <nav class="navbar navbar-expand-lg navbar-color navbar-dark" aria-label="Offcanvas navbar large">
+    <nav class="navbar navbar-expand-xl navbar-color navbar-dark" aria-label="Offcanvas navbar large">
         <div class="container-fluid lt-m util-flex">
             <a class="no-link" href="<?php echo base_url('/');?>">
                 <div class="logo-cont">
@@ -190,8 +190,6 @@
                         </li>
                     </ul>
                 </div>
-
-
             </div>
         </div>
     </nav>

@@ -1,14 +1,14 @@
 <section class="vision-sect row">
     <div class="title-sub col-12">
         <div class="d-flex justify-content-between align-middle">
-            <h5 class="header-text individaul-title"><strong> Nuestras Propiedades</h5>
+            <h5 class="header-text individaul-title">Nuestras Propiedades</h5>
             <div class="header-options">
                 <i class="bi bi-list-task items-space filter-header-size"></i>
                 <h4 class="items-space general-text results"><?php echo $estatesResult . " " . "Resultados" ?></h4>
             </div>
         </div>
     </div>
-    <div class="option-cards-cont">
+    <div class="option-cards-cont ">
         <div class="section-filter-cont">
             <div class="option-filter-cont">
                 <nav class="sidebar general-text">

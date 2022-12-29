@@ -1,5 +1,5 @@
 <div class="small-card" id="<?= "card".$cardId?>">
-    <img class="small-card-img" src="<?php echo base_url('public/assets/images/San_Luis1.jpg');?>" />
+    <img class="small-card-img" src="../../../images/estate/<?=$estate->images[0]->image ? $estate->images[0]->image : base_url('public/assets/images/notImage.png') ?>" />
     <div class="small-card-info">
         <h5 class="small-card-title general-text"><?= $estate->title ?></h5>
         <h6 class="small-card-price"><?php 
