@@ -10,33 +10,37 @@
 </section>
 
 <section class="appraisal-cont">
-        <div class="info-contact-cont" id="form-contact">
-            <h4 class="header-text center-text"><strong>Dejanos tu consulta</strong></h4>
-            <form>
-                <div class="mb-4 input-item-cont">
-                    <input type="text" class="form-control input-style" id="exampleInputEmail1"
-                        aria-describedby="emailHelp" placeholder="Nombre">
-                </div>
-                <div class="mb-4 input-item-cont">
-                    <input type="email" class="form-control input-style" id="exampleInputEmail1"
-                        aria-describedby="emailHelp" placeholder="Email">
-                </div>
-                <div class="mb-4 input-item-cont">
-                    <input type="text" class="form-control input-style" id="exampleInputEmail1"
-                        aria-describedby="emailHelp" placeholder="Telefono">
-                </div>
-                <div class="mb-4 input-item-cont">
-                    <input type="text" class="form-control input-style" id="exampleInputEmail1"
-                        aria-describedby="emailHelp" placeholder="Asunto">
-                </div>
-                <div class="mb-4 input-item-cont">
-                    <textarea class="form-control input-style" id="exampleFormControlTextarea1" rows="3"
-                        placeholder="Dejanos tu mensaje aqui"></textarea>
-                </div>
-                <button type="submit" class="btn-dw">Enviar</button>
-            </form>
-
+    <div class="info-contact-cont" id="form-contact">
+        <h4 class="header-text center-text"><strong>Dejanos tu consulta</strong></h4>
+      <form
+  action="https://formspree.io/f/xzbqbzlq"
+  method="POST"
+>
+<input type="hidden" name="_subject" value='CONSULTA PAGINA WEB' />
+        <div class="mb-4 input-item-cont">
+            <input type="text" class="form-control input-style" name="Nombre" id="exampleInputEmail1"
+                aria-describedby="emailHelp" placeholder="Nombre">
         </div>
+        <div class="mb-4 input-item-cont">
+            <input type="email" class="form-control input-style" name="Email" id="exampleInputEmail1"
+                aria-describedby="emailHelp" placeholder="Email">
+        </div>
+        <div class="mb-4 input-item-cont">
+            <input type="text" class="form-control input-style" name="Telefono" id="exampleInputEmail1"
+                aria-describedby="emailHelp" placeholder="Telefono">
+        </div>
+        <div class="mb-4 input-item-cont">
+            <input type="text" class="form-control input-style" name="Asunto" id="exampleInputEmail1"
+                aria-describedby="emailHelp" placeholder="Asunto">
+        </div>
+        <div class="mb-4 input-item-cont">
+            <textarea class="form-control input-style" id="exampleFormControlTextarea1" name="Mensaje" rows="3"
+                placeholder="Dejanos tu mensaje aqui"></textarea>
+        </div>
+        <button type="submit" class="btn-dw">Enviar</button>
+      </form>
+
+    </div>
 </section>
 
 <

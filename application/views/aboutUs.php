@@ -61,7 +61,7 @@
         <div class="member-cont">
             <img src="<?php echo base_url('public/assets/images/Kary.jpg');?>" class="d-block team-img"
                 alt="Karina Perez Galvan">
-            <h5 class="general-text"><strong>Karina Perez Galvan</strong></h5>
+            <h5 class="general-text"><strong>Karina Peralta Galvan</strong></h5>
             <p class="general-text">Martillera Administrativa</p>
         </div>
         <div class="member-cont">

@@ -1,5 +1,5 @@
 <?php
-
+header('Location: https://dev.dwilliams.com.ar/'); exit;
 /**
  * CodeIgniter
  *
