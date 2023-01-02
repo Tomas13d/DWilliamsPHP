@@ -38,7 +38,7 @@
 </section>
 
 <section class="historia-cont center-text">
-        <h5 class="header-text"><strong>Conoce a Nuestro Equipo</strong></h5>
+        <h5 class="header-text"><strong>Conocé a Nuestro Equipo</strong></h5>
     <div class="equipo-cont">
         <div class="member-cont">
             <img src="<?php echo base_url('public/assets/images/Eduardo.jpg');?>" class="d-block team-img"

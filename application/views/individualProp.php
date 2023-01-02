@@ -8,10 +8,12 @@
                 <div class="carousel-inner">
                     <?php if (count($individualEstate->images) > 0) {
                         foreach (($individualEstate->images) as $index => $image) {  ?>
-                            <div class="<?php echo $index === 0 ? "carousel-item active" : "carousel-item" ?>">
+                            <div class="<?php echo $image->def === "1" ? "carousel-item active" : "carousel-item" ?>">
                                 <img src="../../images/estate/<?= $image->image ?>" class="d-block w-100 prop-img-carousel" alt="<?= $individualEstate->title ?>">
                             </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                           
+                        <?php }?>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Previous</span>
                             </button>
@@ -19,8 +21,8 @@
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Next</span>
                             </button>
-                        <?php }
-                    } else { ?>
+                        
+                        <?php } else { ?>
                         <img src="<?php echo base_url('public/assets/images/notImage.png'); ?>" class="d-block w-100  prop-img-carousel" alt="<?= $estate->title ?>">
                     <?php } ?>
 
@@ -65,7 +67,7 @@
                 </div>
                 <p class="general-text description">
                     <?php
-                    if ($individualEstate->details) {
+                    if ($individualEstate->details !== "") {
                         echo $individualEstate->details;
                     } else {
                         echo 'No hay descripción';

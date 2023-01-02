@@ -10,9 +10,18 @@ class Estate_model extends CI_Model
         /* Estates */
         public function getSingleEstateActive($estateRel)
         {
-                $query = $this->db->query("SELECT * FROM estate WHERE (rel=$estateRel AND ACTIVE= 1)AND id_lang=1");
+                $query = $this->db->query("SELECT * FROM estate WHERE (rel=$estateRel AND ACTIVE= 1) AND id_lang=1");
                 $result = $query->result()[0];
                 $photos = $this->Estate_model->getPhotosFromEstate($estateRel);
+                $haveDef= true;
+                foreach($photos as $index => $photo){
+                        if($photo->def  === "1"){
+                                $haveDef = false;
+                        }
+                }
+                if($haveDef && $photos[0]){
+                        $photos[0]->def = "1";
+                }
                 $extraIcons = $this->Estate_model->getExtrasFromEstate($estateRel);
                 $categoryName = $this->Estate_model->getCategorie($result->categoryRel);
                 $subcategoryName = $this->Estate_model->getSubCategorie($result->subcategoryRel);

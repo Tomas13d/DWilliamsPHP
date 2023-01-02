@@ -15,33 +15,29 @@
     <div id="<?php echo "card".$cardId?>" class="carousel slide" data-bs-ride="false">
         <div class="carousel-inner">
             <a class="nav-link link-letters general-text" aria-current="page"
-                                href="<?php echo base_url("individualProp?estate=$estate->rel");?>">
-            <!-- recorre las imagenes para el carrousel -->
-            <?php if(count($estate->images) > 0) {
-                 foreach (($estate->images) as $index => $image) {  
-                    ?>
-                    <div class="<?php echo $index === 0 ? "carousel-item active": "carousel-item"?>">
-                        <img src="../../../images/estate/<?= $image->image?>"
-                            class="d-block w-100 card-img" alt="<?= $estate->title?>">
-                    </div> 
-                    <button class="carousel-control-prev" type="button" data-bs-target="<?php echo "#card".$cardId?>"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        </button>
-        <button class="carousel-control-next icons-carrousel" type="button" data-bs-target="<?php echo "#card".$cardId?>"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon icons-carrousel" aria-hidden="true"></span>
-        </button>
+                href="<?php echo base_url("individualProp?estate=$estate->rel");?>">
+                <!-- recorre las imagenes para el carrousel -->
+                <?php if(count($estate->images) > 0) {
+                 foreach (($estate->images) as $index => $image) {  ?>
+                <div class="<?php echo ($image->def === "1" ? "carousel-item active" : "carousel-item")?>">
+                    <img src="../../../images/estate/<?= $image->image?>" class="d-block w-100 card-img"
+                        alt="<?= $estate->title?>">
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="<?php echo "#card".$cardId?>"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </button>
+                <button class="carousel-control-next icons-carrousel" type="button"
+                    data-bs-target="<?php echo "#card".$cardId?>" data-bs-slide="next">
+                    <span class="carousel-control-next-icon icons-carrousel" aria-hidden="true"></span>
+                </button>
                 <?php }} else { ?>
-                    <img src="<?php echo base_url('public/assets/images/notImage.png'); ?>"
-                    class="d-block w-100 card-img" alt="<?= $estate->title?>">
-                    <?php } ?>
-               
-                    </a>
-                       
-
+                <img src="<?php echo base_url('public/assets/images/notImage.png'); ?>" class="d-block w-100 card-img"
+                    alt="<?= $estate->title?>">
+                <?php } ?>
+            </a>
         </div>
-        
+
     </div>
     <div class="info-container">
         <h5 class="card-title"><strong><?= $estate->title ?></strong>

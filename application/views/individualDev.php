@@ -1,29 +1,22 @@
 <section class="vision-sect">
     <div class="title-sub">
-        <h5 class="header-text individaul-title"><strong>Villa Magdalena</strong></h5>
+        <h5 class="header-text individaul-title"><strong><?= $singleDevelopment->title?></strong></h5>
     </div>
     <div id="carouselExampleIndicators" class="carousel slide carrousel-margin" data-bs-ride="true">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
-        </div>
         <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="<?php echo base_url('public/assets/images/Terrazas_del_Portezuelo.jpg');?>"
-                    class="d-block w-100 dev-img-carousel" alt="Potrero de los Funes">
-            </div>
-            <div class="carousel-item">
-                <img src="<?php echo base_url('public/assets/images/Terrazas_del_Portezuelo.jpg');?>"
-                    class="d-block w-100 dev-img-carousel" alt="Potrero de los Funes">
-            </div>
-            <div class="carousel-item">
-                <img src="<?php echo base_url('public/assets/images/Terrazas_del_Portezuelo.jpg');?>"
-                    class="d-block w-100 dev-img-carousel" alt="Potrero de los Funes">
-            </div>
+        <?php  foreach (($singleDevelopment->images) as $index => $image) {  ?>
+                            <div class="<?php echo $index === 0 ? "carousel-item active" : "carousel-item" ?>">
+                                <img src="../../public/assets/images/desarrollos/<?=$image ?>.jpg" class="d-block w-100 dev-img-carousel" alt="<?= $singleDevelopment->title ?>">
+                            </div>
+                        <?php } ?>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
             data-bs-slide="prev">
@@ -43,13 +36,20 @@
                 <div class="title-sub">
                     <h5 class="subTitle-text"><strong>Descripción</strong></h5>
                 </div>
-                <p class="general-text description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-                    eligendi similique, ad excepturi, voluptatibus praesentium exercitationem pariatur dicta ea nobis
-                    ipsam. Labore nam animi quos voluptatum accusantium qui laudantium hic!</p>
+                <p class="general-text description"><?= $singleDevelopment->description?></p>
             </div>
             <div class="details-cont individual-view-cont">
                 <div class="title-sub">
                     <h5 class="subTitle-text"><strong>Detalles</strong></h5>
+                </div>
+                <div class="icons-container row d-flex justify-content-between">
+                <?php
+                            foreach (($singleDevelopment->details) as $index => $icon) { ?>
+                                <div class="col-sm-12 col-md-12 col-lg-4 extra-invidual">
+                                    <h4 class="general-text"><i class="<?= $icon->icon ?>"></i> <?= $icon->name ?></h4>
+                                </div>
+                            <?php
+                            }; ?>
                 </div>
             </div>
         </div>
@@ -68,24 +68,22 @@
         </div>
         <div class="location-box">
             <div>
-                <h4 class="general-text margin-item-develo"><strong>Dirección:</strong> <i>Los Paraísos, San Luis</i>
+                <h4 class="general-text margin-item-develo"><strong>Dirección:</strong> <i><?= $singleDevelopment->direction?></i>
                 <h4>
-                <h4 class="general-text margin-item-develo"><strong>Ciudad:</strong> <i>San Luis</i>
+                <h4 class="general-text margin-item-develo"><strong>Ciudad:</strong> <i><?= $singleDevelopment->city?></i>
                             <h4>
                     
                         </div>
                         <div class="second-location-box">
-                        <h4 class="general-text margin-item-develo"><strong>Zona:</strong> <i>Potrero de los Funes</i>
+                        <h4 class="general-text margin-item-develo"><strong>Zona:</strong> <i><?= $singleDevelopment->zone?></i>
                     <h4>
                             
             </div>
         </div>
         <div class="mapouter round-borders">
-            <div class="gmap_canvas round-borders"><iframe class="gmap_iframe round-borders" width="100%"
-                    frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-                    src="https://maps.google.com/maps?q=villa%20magdalena%20potrero%20de%20los%20funes&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe><a
-                    href="https://piratebay-proxys.com/">Piratebay</a></div>
-        </div>
+            <div class="gmap_canvas round-borders"><iframe class="gmap_iframe round-borders" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src=<?="https://maps.google.com/maps?q=$singleDevelopment->coordinates&hl=es;z=14&amp;output=embed" ?>>;
+                </iframe>
+            </div>
     </div>
 
 

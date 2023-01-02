@@ -16,7 +16,7 @@
   action="https://formspree.io/f/xzbqbzlq"
   method="POST"
 >
-<input type="hidden" name="_subject" value='CONSULTA PAGINA WEB' />
+<input type="hidden" name="_subject" value='CONSULTA PAGINA WEB (Tasacion)' />
         <div class="mb-4 input-item-cont">
             <input type="text" class="form-control input-style" name="Nombre" id="exampleInputEmail1"
                 aria-describedby="emailHelp" placeholder="Nombre">

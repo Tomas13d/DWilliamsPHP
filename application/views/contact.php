@@ -52,7 +52,11 @@
 
         <div class="info-contact-cont form-cont">
             <h4 class="general-text consults"><strong>Dejanos tu consulta</strong></h4>
-            <form class="form-cont">
+            <form
+            class="form-cont"
+            action="https://formspree.io/f/xzbqbzlq"
+            method="POST">
+            <input type="hidden" name="_subject" value='CONSULTA PAGINA WEB' />
                 <div class="mb-4 input-item-cont">
                     <input type="text" class="form-control input-style" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nombre">
                 </div>
