@@ -1,6 +1,6 @@
 <section class="vision-sect">
     <div class="title-sub">
-        <h5 class="header-text individaul-title"><strong><?= $singleDevelopment->title?></strong></h5>
+        <h5 class="header-text-2 individaul-title"><strong><?= $singleDevelopment->title?></strong></h5>
     </div>
     <div id="carouselExampleIndicators" class="carousel slide carrousel-margin" data-bs-ride="true">
         <div class="carousel-inner">

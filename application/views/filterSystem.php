@@ -1,7 +1,7 @@
 <section class="vision-sect row">
     <div class="title-sub col-12">
         <div class="d-flex justify-content-between align-middle item-filter-system">
-            <h5 class="header-text individaul-title">Nuestras Propiedades</h5>
+            <h5 class="header-text-2 individaul-title">Nuestras Propiedades</h5>
             <div class="header-options">
                 <a class="btn btn-add-filters no-link" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
                     aria-controls="offcanvasExample">

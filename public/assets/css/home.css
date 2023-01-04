@@ -15,6 +15,12 @@
 	margin-bottom: 20px;
 	text-decoration: underline;
 }
+
+.header-text-2{
+	font-size: 28px;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
 .text-filter-title{
 	font-weight:500;
 }
@@ -1375,6 +1381,9 @@ input:checked{
 	.consult-buton-link-2{
 		display: block;
 		
+	}
+	.prop-img-carousel{
+		height: 340px;
 	}
 
 }

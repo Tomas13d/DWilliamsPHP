@@ -1,6 +1,6 @@
 <section class="vision-sect">
     <div class="title-sub">
-        <h5 class="header-text individaul-title"><strong><?= $individualEstate->title ?></strong></h5>
+        <h5 class="header-text-2 individaul-title"><strong><?= $individualEstate->title ?></strong></h5>
     </div>
     <div class="row justify-content-between carrousel-contact-info-cont">
         <div class="col col-9 description-and-details-cont">
