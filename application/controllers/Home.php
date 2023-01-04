@@ -18,7 +18,7 @@ class Home extends CI_Controller {
 		$cardsEstates = array_merge($estatesInRent, $estatesForSale);
 		$cards = "";
 	
-		foreach ($cardsEstates as $index => $estate) {
+		foreach ($cardsEstates as $cardIndex => $estate) {
 			$photos = $this->Estate_model->getPhotosFromEstateLimited($estate->rel, 4);
 			$extraIcons = $this->Estate_model->getExtrasFromEstateLimited($estate->rel, 4);
 			$haveDef= true;
@@ -34,7 +34,7 @@ class Home extends CI_Controller {
 			}
 			$estate->images = $photos;
 			$estate->extraIcons = $extraIcons;
-			$cards .=  $this->load->view('components/card', ["cardId" => $index, "estate" => $estate ], true);
+			$cards .=  $this->load->view('components/card', ["cardId" => $cardIndex , "estate" => $estate ], true);
 		}
 		$this->load->view('head');
 		$this->load->view('components/navbar');

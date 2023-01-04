@@ -37,26 +37,29 @@
                 <p class="p-contact">0266-4422515</p>
             </div>
             <div class="social-media-cont">
-                <h4 class="general-text social-text"><i class="bi bi-instagram gold-color icon-contact">
-                    </i><strong>Instagram</strong>
-                </h4>
-                <h4 class="general-text"><i class="bi bi-facebook gold-color icon-contact">
-                    </i><strong>Facebook</strong>
-                </h4>
-                <h4 class="general-text"><i class="bi bi-linkedin gold-color icon-contact">
-                    </i><strong>Linkedin</strong>
-                </h4>
+                <a class="no-decoration" href="https://www.instagram.com/dwilliamsbienesraices/" class="no-decoration">
+                    <h4 class="general-text social-text"><i class="bi bi-instagram gold-color icon-contact">
+                        </i><strong>Instagram</strong>
+                    </h4>
+                </a>
+                <a class="no-decoration" href="https://www.facebook.com/dwilliamsbr" class="no-decoration">
+                    <h4 class="general-text"><i class="bi bi-facebook gold-color icon-contact">
+                        </i><strong>Facebook</strong>
+                    </h4>
+                </a>
+                <a class="no-decoration" href="https://www.linkedin.com/company/dwilliamsre/" class="no-decoration">
+                    <h4 class="general-text"><i class="bi bi-linkedin gold-color icon-contact">
+                        </i><strong>Linkedin</strong>
+                    </h4>
+                </a>
             </div>
 
         </div>
 
         <div class="info-contact-cont form-cont">
             <h4 class="general-text consults"><strong>Dejanos tu consulta</strong></h4>
-            <form
-            class="form-cont"
-            action="https://formspree.io/f/xzbqbzlq"
-            method="POST">
-            <input type="hidden" name="_subject" value='CONSULTA PAGINA WEB' />
+            <form class="form-cont" action="https://formspree.io/f/xzbqbzlq" method="POST">
+                <input type="hidden" name="_subject" value='CONSULTA PAGINA WEB' />
                 <div class="mb-4 input-item-cont">
                     <input type="text" class="form-control input-style" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nombre">
                 </div>
@@ -79,10 +82,7 @@
     </div>
     <div class="block-cont" id="ubication-map">
         <div class="mapouter">
-        <div class="gmap_canvas round-borders"><iframe class="gmap_iframe round-borders" width="100%"
-                    frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-                    src="https://maps.google.com/maps?width=1197&amp;height=240&amp;hl=en&amp;q=9 de julio 748&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a
-                    href="https://piratebay-proxys.com/">Piratebay</a></div>
+            <div class="gmap_canvas round-borders"><iframe class="gmap_iframe round-borders" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=1197&amp;height=240&amp;hl=en&amp;q=9 de julio 748&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://piratebay-proxys.com/">Piratebay</a></div>
         </div>
     </div>
 </section>

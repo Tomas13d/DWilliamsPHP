@@ -119,7 +119,7 @@ class FilterSystem extends CI_Controller
 
 		/* complet view estate cards */
 		$filterEstatesComplet = "";
-		foreach ($perPageEstates as $index => $estate) {
+		foreach ($perPageEstates as $cardIndex  => $estate) {
 			$photos = $this->Estate_model->getPhotosFromEstateLimited($estate->rel, 4);
 			$extraIcons = $this->Estate_model->getExtrasFromEstateLimited($estate->rel, 4);
 			$haveDef = true;
@@ -135,7 +135,7 @@ class FilterSystem extends CI_Controller
 			}
 			$estate->images = $photos;
 			$estate->extraIcons = $extraIcons;
-			$filterEstatesComplet .=  $this->load->view('components/card', ["cardId" => $index, "estate" => $estate], true);
+			$filterEstatesComplet .=  $this->load->view('components/card', ["cardId" => $cardIndex, "estate" => $estate], true);
 		}
 
 
