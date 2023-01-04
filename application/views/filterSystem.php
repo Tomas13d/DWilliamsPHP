@@ -29,6 +29,29 @@
                             <p class="text-filter no-filters">No hay filtros activos</p>
                         </li>
 
+                         <!-- ZONA -->
+                         <li class="nav-item">
+                            <a class="nav-link no-decoration title-sub"> Zona <i
+                                    class="bi bi-caret-right"></i></a>
+                            <ul class="submenu collapse">
+                                <?php
+                                foreach ($activeZones as $index => $city) {
+                                ?>
+                                <h4 class="title-subcategory general-text text-filter-title"><?= $index ?></h4>
+                                <?php foreach ($city as $index => $zone) {
+                                    ?>
+                                <li>
+                                    <input type="checkbox" class="form-check-input"
+                                        value=<?= str_replace(" ", "-", $zone->disctrict) ?> data-rel=<?= $zone->rel ?>
+                                        accesskey="cityID">
+                                    <label class="form-check-label text-filter"><?= $zone->disctrict ?></label>
+                                </li>
+                                <?php
+                                    }
+                                }; ?>
+                            </ul>
+                        </li>
+
                         <!-- OPERATION -->
                         <li class="nav-item has-submenu">
                             <a class="nav-link no-decoration title-sub" href="#"> Operacion <i
@@ -68,7 +91,7 @@
                             </ul>
                         </li>
 
-                        <!-- DORMITORIOS -->
+                        <!-- Subcategoria -->
                         <li class="nav-item">
                             <a class="nav-link no-decoration title-sub"> Subcategoria <i
                                     class="bi bi-caret-right"></i></a>
@@ -90,11 +113,8 @@
                                 }; ?>
                             </ul>
                         </li>
-                        <!-- ZONA -->
-                        <li class="nav-item">
-                            <a class="nav-link no-decoration title-sub" href="#"> Zona <i
-                                    class="bi bi-caret-right"></i></a>
-                        </li>
+
+                       
 
                     </ul>
                 </nav>

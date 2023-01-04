@@ -1057,7 +1057,7 @@ i {
 	margin: 0;
 }
 .section-filter-cont{
-	height: 900px;
+	height: auto;
 	padding: 0;
 	margin: 0;
 }
@@ -1068,7 +1068,7 @@ i {
 	border-radius: 6px;
 	width: 28%;
 	min-width: 348px;
-	height: 100%;
+	height: auto;
 	padding: 10px 15px;
 }
 .cards-container-filter{
@@ -1088,6 +1088,10 @@ i {
 
 .option{
 	height: auto;
+}
+
+.sidebar{
+	margin-bottom: 200px;
 }
 .sidebar li .submenu{ 
 	list-style: none; 

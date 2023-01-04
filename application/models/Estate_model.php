@@ -1,7 +1,4 @@
 <?php
-
-use LDAP\Result;
-
 defined('BASEPATH') or exit('No direct script access allowed');
 
 
@@ -13,14 +10,14 @@ class Estate_model extends CI_Model
                 $query = $this->db->query("SELECT * FROM estate WHERE (rel=$estateRel AND ACTIVE= 1) AND id_lang=1");
                 $result = $query->result()[0];
                 $photos = $this->Estate_model->getPhotosFromEstate($estateRel);
-                $haveDef= true;
-                if(count($photos) > 0){
-                        foreach($photos as $index => $photo){
-                                if($photo->def  === "1"){
+                $haveDef = true;
+                if (count($photos) > 0) {
+                        foreach ($photos as $index => $photo) {
+                                if ($photo->def  === "1") {
                                         $haveDef = false;
                                 }
                         }
-                        if($haveDef && $photos[0]){
+                        if ($haveDef && $photos[0]) {
                                 $photos[0]->def = "1";
                         }
                 }
@@ -186,6 +183,7 @@ class Estate_model extends CI_Model
                 $query = $this->db->query($request);
                 return $query->result();
         }
+        /* FILTERED STATES */
         public function dinamicRequestFilter($queryArray)
         {
                 $request = "SELECT * FROM estate WHERE (id_lang=1 AND active=1) ";
@@ -201,6 +199,16 @@ class Estate_model extends CI_Model
                         $request = $request . " " . "AND" . " " . "(" . $longQuery . ")";
                 }
                 $query = $this->db->query($request);
+                return $query->result();
+        }
+        /* ACTIVE ESTATES CITYS AND ZONES  */
+        public function getActiveCityZones()
+        {
+                $query = $this->db->query("SELECT DISTINCT C.name disctrict, S.name city, C.id_city rel
+                  FROM estate AS E
+                  INNER JOIN city AS C ON E.cityID=C.id_city 
+                  INNER JOIN state AS S ON E.stateID=S.id_state
+                  WHERE E.active=1");
                 return $query->result();
         }
 }
