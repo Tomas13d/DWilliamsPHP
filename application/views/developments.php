@@ -11,7 +11,7 @@
 
 <section class="vision-sect">
     <div class="our-props-title">
-        <h3 class="header-text">Vision</h3>
+        <h3 class="header-text">Visión</h3>
         <p class="subTitle-text text-box">Expandir nuestros servicios, conocimientos y experiencia aportando al mercado
             inmobiliario nuestras propuestas y desarrollos destinados a satisfacer los requerimientos de nuestros
             clientes.</p>

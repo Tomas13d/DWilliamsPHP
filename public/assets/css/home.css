@@ -13,6 +13,7 @@
 	font-size: 28px;
 	font-weight: 700;
 	margin-bottom: 20px;
+	text-decoration: underline;
 }
 .text-filter-title{
 	font-weight:500;
@@ -249,6 +250,10 @@ i {
 
 .our-props-title {
 	text-align: center;
+	margin-bottom: 30px;
+}
+
+.about-us-title {
 	margin-bottom: 30px;
 }
 
@@ -649,10 +654,7 @@ i {
 	margin: 0 auto;
 }
 
-.text-box-2 {
-	width: 80%;
-	margin: 0 auto;
-}
+
 .image-dev-over-cont {
 	position: relative;
 }
@@ -758,16 +760,20 @@ i {
 	margin-top: 30px;
 	display: flex;
 	justify-content: center;
-	align-items: center;
 	flex-wrap: wrap;
 }
 
 .member-cont {
 	margin: 40px 100px;
+	display: flex;
+	flex-direction: column;
 	text-align: center;
+	align-items: center;
 }
 
 .team-img {
+	max-width: 200px;
+	max-height: 200px;
 	margin-bottom: 20px;
 }
 

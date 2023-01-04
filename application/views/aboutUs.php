@@ -1,5 +1,5 @@
 <section class="header-port aboutUs-background">
-    <h3 class="textP">¿Quienes Somos?</h3>
+    <h3 class="textP">¿ Quienes Somos ?</h3>
     <div class="logo-devolps">
         <svg width="80" height="80" viewBox="0 0 1371 1371" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -10,9 +10,9 @@
 </section>
 
 <section class="vision-sect">
-    <div class="our-props-title">
+    <div class="about-us-title">
         <h3 class="header-text">Nuestras Empresa</h3>
-        <p class="subTitle-text text-box-2">Distinguir nuestro servicio y permitir el desarrollo profesional de nuestra gente, generando igualdad de oportunidades, capacitando y
+        <p class="subTitle-text">Distinguir nuestro servicio y permitir el desarrollo profesional de nuestra gente, generando igualdad de oportunidades, capacitando y
             motivando para alcanzar los objetivos de nuestra empresa.<br>
             Alcanzamos relaciones con clientes, colegas, proveedores, inversores, desarrolladores, como forma de
             manifestar nuestro rol de empresa independiente, comprometida con su entorno. </p>
@@ -38,7 +38,7 @@
 </section>
 
 <section class="historia-cont center-text">
-        <h5 class="header-text"><strong>Conocé a Nuestro Equipo</strong></h5>
+        <h5 class="header-text"><strong><u>Conocé a Nuestro Equipo</u></strong></h5>
     <div class="equipo-cont">
         <div class="member-cont">
             <img src="<?php echo base_url('public/assets/images/Eduardo.jpg');?>" class="d-block team-img"
