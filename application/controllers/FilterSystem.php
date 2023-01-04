@@ -115,13 +115,15 @@ class FilterSystem extends CI_Controller
 			$photos = $this->Estate_model->getPhotosFromEstateLimited($estate->rel, 4);
 			$extraIcons = $this->Estate_model->getExtrasFromEstateLimited($estate->rel, 4);
 			$haveDef= true;
-			foreach($photos as $index => $photo){
-				if($photo->def  === "1"){
-					$haveDef = false;
+			if(count($photos) > 0){
+				foreach($photos as $index => $photo){
+					if($photo->def  === "1"){
+						$haveDef = false;
+					}
 				}
-			}
-			if($haveDef && $photos[0]){
-				$photos[0]->def = "1";
+				if($haveDef && $photos){
+					$photos[0]->def = "1";
+				}
 			}
 			$estate->images = $photos;
 			$estate->extraIcons = $extraIcons;

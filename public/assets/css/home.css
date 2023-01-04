@@ -1037,7 +1037,7 @@ i {
 
 /* FILTER SISTEM */
 .filter-header-size {
-	font-size: 26px;
+	font-size: 22px;
 }
 .results{
 	margin: 5px;
@@ -1200,6 +1200,15 @@ input:checked{
 	text-align: center;
 	font-weight: 500;
 }
+.btn-add-filters{
+	background-color: #641315;
+	color: #fff;
+	border-radius: 4px;
+	padding: 5px;
+	margin: 5px;
+	display: none;
+	
+}
 
 @media only screen and (max-width: 900px) {
 	/* Footer */
@@ -1264,6 +1273,19 @@ input:checked{
 	}
 	.history-cont {
 		margin-top: 20px;
+	}
+	.btn-add-filters{
+		display: block;
+}
+	.item-filter-system{
+		display: block !important;
+	}
+	.header-options{
+		justify-content: space-between;
+		align-items: baseline;
+	}
+	.cards-container-filter{
+		justify-content: center;
 	}
 }
 
@@ -1344,4 +1366,5 @@ input:checked{
 		display: block;
 		
 	}
+
 }
