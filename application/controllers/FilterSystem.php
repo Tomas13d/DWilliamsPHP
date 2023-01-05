@@ -138,9 +138,10 @@ class FilterSystem extends CI_Controller
 			$filterEstatesComplet .=  $this->load->view('components/card', ["cardId" => $cardIndex, "estate" => $estate], true);
 		}
 
+		$navColor = true;
 
 		$this->load->view('head');
-		$this->load->view('components/navbar');
+		$this->load->view('components/navbar', ["navColor" => $navColor]);
 		$this->load->view('filterSystem', ["estateTypes" => $estateTypes, "estateSubtypes" => $subtypes, "activeZones" => $filterZones, "filterEstates" => $filterEstatesComplet, "estatesResult" => $filterEstatesCount, "pagination" => $paginationLinks]);
 		$this->load->view('components/footer');
 	}

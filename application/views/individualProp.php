@@ -111,7 +111,7 @@
 
                             <?php
                             foreach (($individualEstate->extraIcons) as $index => $icon) { ?>
-                                <div class="col-4 extra-invidual">
+                                <div class="col-sm-12 col-md-12 col-lg-4 extra-invidual">
                                     <h4 class="general-text"><i class="<?= $icon->icon ?>"></i> <?= $icon->name ?></h4>
                                 </div>
                             <?php

@@ -36,8 +36,9 @@ class Home extends CI_Controller {
 			$estate->extraIcons = $extraIcons;
 			$cards .=  $this->load->view('components/card', ["cardId" => $cardIndex , "estate" => $estate ], true);
 		}
+		$navColor = false;
 		$this->load->view('head');
-		$this->load->view('components/navbar');
+		$this->load->view('components/navbar', ["navColor" => $navColor]);
 		$this->load->view('home', ["cards" => $cards]);
 		$this->load->view('components/footer');
 	}

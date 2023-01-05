@@ -48,8 +48,13 @@
 }
 
 /*NAVBAR*/
-.navbar-color {
+.navbar-toggle-1{
 	background-color: rgba(0, 0, 0, 0.6);
+}
+.navbar-toggle-2{
+	background-color: #641314ea;
+}
+.navbar-color{
 	color: #fff;
 	position: absolute;
 	z-index: 10;
@@ -1221,7 +1226,7 @@ input:checked{
 
 .not-found-img{
 	width: 500px;
-	height: 400px;
+	height: 450px;
 }
 .no-found-text{
 	margin: 20px;
@@ -1438,5 +1443,9 @@ input:checked{
 	}
 	.option-cards-cont{
 		justify-content: center;
+	}
+	.not-found-img{
+		width: 300px;
+		height: 250px;
 	}
 }
