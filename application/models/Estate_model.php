@@ -65,12 +65,12 @@ class Estate_model extends CI_Model
         /* Photos */
         public function getPhotosFromEstate($estateRel)
         {
-                $query = $this->db->query("SELECT * FROM gallery_estate WHERE gallery_estate.rel=$estateRel");
+                $query = $this->db->query("SELECT * FROM gallery_estate WHERE gallery_estate.rel=$estateRel ORDER BY def DESC");
                 return $query->result();
         }
         public function getPhotosFromEstateLimited($estateRel, $limit)
         {
-                $query = $this->db->query("SELECT * FROM gallery_estate WHERE gallery_estate.rel=$estateRel LIMIT $limit");
+                $query = $this->db->query("SELECT * FROM gallery_estate WHERE gallery_estate.rel=$estateRel ORDER BY def DESC LIMIT $limit");
                 return $query->result();
         }
         /* Extras */
