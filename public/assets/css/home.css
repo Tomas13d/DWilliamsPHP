@@ -1190,6 +1190,9 @@ input:checked{
 	justify-content: center;
 }
 .current{
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	border-radius: 50%;
 	background-color: #641315;
 	color: #fff;
