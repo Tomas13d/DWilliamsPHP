@@ -294,22 +294,27 @@ i {
 	border-radius: 6px;
 }
 
+.gold{
+	background-color: #d6ab55ea;
+}
+.redbrown{
+	background-color: #641314eb;
+}
+
 .top-box {
-	background-color: #641315;
-	border-top-left-radius: 6px;
-	border-bottom-right-radius: 6px;
+	border-radius: 6px;
 	max-height: 25px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
 	color: white;
-	font-size: 16px;
+	font-size: 14px;
 	font-weight: 200;
-	padding: 10px;
+	padding: 0px 5px;
 	position: absolute;
-	top: 12px;
-	left: -1px;
+	top: 25px;
+	right: 10px;
 	transform: translateY(-50%);
 	z-index: 1;
 }
@@ -352,9 +357,9 @@ i {
 	overflow: hidden;
 }
 
-.card-description {
+.card-price {
 	font-size: 18px;
-	font-weight: 300;
+	font-weight: 400;
 	text-overflow: ellipsis;
 }
 
@@ -365,7 +370,7 @@ i {
 .icon-text {
 	margin: 10px 5px 10px 0px;
 	font-size: 16px;
-	font-weight: 200;
+	color: rgb(53, 53, 53);
 	text-transform: capitalize;
 }
 
@@ -615,6 +620,10 @@ i {
 	color: #000;
 }
 
+.no-decoration:hover {
+	color: #d6ab55;
+}
+
 .no-link {
 	text-decoration: none;
 	color: #fff;
@@ -738,6 +747,8 @@ i {
 
 .title-sub {
 	border-bottom: 1px solid rgb(186, 186, 186);
+	margin: 0;
+	padding: 0;
 }
 
 .alberto-img {
@@ -849,7 +860,7 @@ i {
 /* INDIVIDUAL DEVELOPMENT VIEW*/
 
 .individaul-title {
-	margin-bottom: 0 !important;
+	margin: 0 !important;
 }
 
 .dev-img-carousel {
@@ -1052,7 +1063,7 @@ i {
 	font-size: 20px;
 }
 .results{
-	margin: 5px;
+	margin-bottom: 5px;
 }
 
 .header-options{
@@ -1218,10 +1229,10 @@ input:checked{
 	font-weight: 500;
 }
 .btn-add-filters{
-	background-color: #641315;
+	background-color: #641314de;
 	color: #fff;
 	border-radius: 4px;
-	padding: 3px 5px;
+	padding: 1px 5px;
 	margin: 5px;
 	display: none;
 	
@@ -1298,11 +1309,15 @@ input:checked{
 		display: block !important;
 	}
 	.header-options{
+		margin-top: 20px;
 		justify-content: space-between;
 		align-items: baseline;
+		margin-left: 12px;
+		margin-right: 3px;
 	}
 	.cards-container-filter{
 		justify-content: center;
+		margin: 20px auto;
 	}
 }
 
@@ -1341,9 +1356,14 @@ input:checked{
 		margin: 0 auto;
 	}
 	.social-media-cont {
-		width: 90%;
-		margin-left: 40px;
+		width: 100%;
+		justify-content: flex-start;
+		text-align: start;
 		display:block;
+		margin: 30px 0px 10px 0px;
+	}
+	.social-text{
+		margin-bottom: 15px;
 	}
 	.mobile-wallpaper {
 		display: block;
@@ -1391,5 +1411,32 @@ input:checked{
 	}
 	.header-text-2{
 		text-align: center;
+	}
+	.about-us-title {
+		text-align: center;
+	}
+	.history-cont{
+		margin: 20px auto;
+	}
+	.contenido-hist{
+		text-align: center;
+		margin: 0px auto;
+	}
+	.p-contact{
+		margin: 0 auto;
+	}
+	
+	.info-item-contact{
+		margin: 20px auto;
+		text-align: start;
+	}
+	.form-cont{
+		margin: 40px auto;
+	}
+	.input-item-cont{
+		margin: 5px auto 20px auto;
+	}
+	.option-cards-cont{
+		justify-content: center;
 	}
 }

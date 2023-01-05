@@ -1,5 +1,7 @@
 <div class="card">
-    <div class="top-box"><?php
+    <div class="top-box <?php
+    echo $estate->op === "2" ? "gold" : "redbrown"
+    ?>"><?php
     switch($estate->op){
         case "1": 
             echo "En Venta";
@@ -40,21 +42,16 @@
 
     </div>
     <div class="info-container">
-        <h5 class="card-title"><strong><?= $estate->title ?></strong>
+    <a class="no-decoration" href="<?php echo base_url("individualProp?estate=$estate->rel");?>">
+        <h5 class="card-title"><?= $estate->title ?>
         </h5>
-        <div class="card-description-cont">
-            <p class="card-description"><?= $estate->details ?></p>
-        </div>
-        <div class="icons-container row">
-            <?php
-               foreach (($estate->extraIcons) as $index => $icon){ ?>
-            <div class="col col-6">
-                <i class="<?= $icon->icon?> icon-text"></i><strong><?= $icon->name?></strong>
-            </div>
-            <?php    
-           };?>
-
-        </div>
+                </a>
+        <p class="card-price"><?php
+                                                if ($estate->price) {
+                                                            echo "$estate->currency $estate->price";
+                                                        } else {
+                                                            echo 'Consultar';
+                                                        } ?></p>
     </div>
 
 </div>

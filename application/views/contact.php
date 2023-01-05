@@ -43,12 +43,12 @@
                     </h4>
                 </a>
                 <a class="no-decoration" href="https://www.facebook.com/dwilliamsbr" class="no-decoration">
-                    <h4 class="general-text"><i class="bi bi-facebook gold-color icon-contact">
+                    <h4 class="general-text social-text"><i class="bi bi-facebook gold-color icon-contact">
                         </i><strong>Facebook</strong>
                     </h4>
                 </a>
                 <a class="no-decoration" href="https://www.linkedin.com/company/dwilliamsre/" class="no-decoration">
-                    <h4 class="general-text"><i class="bi bi-linkedin gold-color icon-contact">
+                    <h4 class="general-text social-text"><i class="bi bi-linkedin gold-color icon-contact">
                         </i><strong>Linkedin</strong>
                     </h4>
                 </a>
