@@ -7,9 +7,10 @@ class FilterSystem extends CI_Controller
 	{
 		parent::__construct();
 		$this->load->model('Estate_model');
+		$this->load->helper('especialcharacters');
 	}
 
-
+	
 	public function index()
 	{
 
@@ -115,8 +116,6 @@ class FilterSystem extends CI_Controller
 			$perPageEstates = array_slice($filterEstates, 0, 15);
 		}
 
-
-
 		/* complet view estate cards */
 		$filterEstatesComplet = "";
 		foreach ($perPageEstates as $cardIndex  => $estate) {
@@ -142,7 +141,15 @@ class FilterSystem extends CI_Controller
 
 		$this->load->view('head');
 		$this->load->view('components/navbar', ["navColor" => $navColor]);
-		$this->load->view('filterSystem', ["estateTypes" => $estateTypes, "estateSubtypes" => $subtypes, "activeZones" => $filterZones, "filterEstates" => $filterEstatesComplet, "estatesResult" => $filterEstatesCount, "pagination" => $paginationLinks]);
+		$this->load->view('filterSystem', [
+			"estateTypes" => $estateTypes, 
+			"estateSubtypes" => $subtypes, 
+			"activeZones" => $filterZones, 
+			"filterEstates" => $filterEstatesComplet, 
+			"estatesResult" => $filterEstatesCount, 
+			"pagination" => $paginationLinks, 
+		/* 	"especialCharactes" => especialCharactersFix, */
+		]);
 		$this->load->view('components/footer');
 	}
 }

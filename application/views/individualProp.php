@@ -1,6 +1,6 @@
 <section class="vision-sect">
     <div class="title-sub">
-        <h5 class="header-text-2 individaul-title"><strong><?= $individualEstate->title ?></strong></h5>
+        <h5 class="header-text-2 individaul-title"><strong><?= especialCharactersFix($individualEstate->title) ?></strong></h5>
     </div>
     <div class="row justify-content-between carrousel-contact-info-cont">
         <div class="col col-9 description-and-details-cont">
@@ -23,7 +23,7 @@
                             </button>
                         
                         <?php } else { ?>
-                        <img src="<?php echo base_url('public/assets/images/notImage.png'); ?>" class="d-block w-100  prop-img-carousel" alt="<?= $estate->title ?>">
+                        <img src="<?php echo base_url('public/assets/images/notImage.png'); ?>" class="d-block w-100  prop-img-carousel" alt="<?= especialCharactersFix($estate->title) ?>">
                     <?php } ?>
 
                 </div>
@@ -68,7 +68,7 @@
                 <p class="general-text description">
                     <?php
                     if ($individualEstate->details !== "") {
-                        echo $individualEstate->details;
+                        echo especialCharactersFix($individualEstate->details);
                     } else {
                         echo 'No hay descripción';
                     } ?></p>
@@ -112,7 +112,7 @@
                             <?php
                             foreach (($individualEstate->extraIcons) as $index => $icon) { ?>
                                 <div class="col-sm-12 col-md-12 col-lg-4 extra-invidual">
-                                    <h4 class="general-text"><i class="<?= $icon->icon ?>"></i> <?= $icon->name ?></h4>
+                                    <h4 class="general-text"><i class="<?= $icon->icon ?>"></i> <?= especialCharactersFix($icon->name) ?></h4>
                                 </div>
                             <?php
                             }; ?>
@@ -143,7 +143,7 @@
             <div class="col col-6">
                 <h4 class="general-text margin-item-develo"><strong>Dirección:</strong> <i><?php
                                                                                             if ($individualEstate->address) {
-                                                                                                echo $individualEstate->address;
+                                                                                                echo especialCharactersFix($individualEstate->address);
                                                                                             } else {
                                                                                                 echo 'Consultar';
                                                                                             } ?></i>

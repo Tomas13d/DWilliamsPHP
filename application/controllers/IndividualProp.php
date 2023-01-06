@@ -5,6 +5,7 @@ class IndividualProp extends CI_Controller {
 	public function __construct() {
 		parent::__construct();
 		$this->load->model('Estate_model');
+		$this->load->helper('especialcharacters');
 	}
 	
 

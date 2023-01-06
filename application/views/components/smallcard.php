@@ -1,7 +1,7 @@
 <div class="small-card" id="<?= "card".$cardId?>">
-    <img class="small-card-img" src="../../../images/estate/<?=$estate->images[0]->image ? $estate->images[0]->image : base_url('public/assets/images/notImage.png') ?>" />
+    <img class="small-card-img" src="<?=($estate->images && $estate->images[0] && $estate->images[0]->image) ? "../../../images/estate/".$estate->images[0]->image : base_url('public/assets/images/notImage.png') ?>" />
     <div class="small-card-info">
-        <h5 class="small-card-title general-text"><?= $estate->title ?></h5>
+        <h5 class="small-card-title general-text"><?= especialCharactersFix($estate->title) ?></h5>
         <h6 class="small-card-price"><?php 
         if($estate->price){
             echo "$$estate->price";
@@ -17,7 +17,7 @@
                     echo '';
                 }?> icon-text"></i><strong><?php
                 if($estate->extraIcons && $estate->extraIcons[0]->name){
-                    echo $estate->extraIcons[0]->name;
+                    echo especialCharactersFix($estate->extraIcons[0]->name);
                 } else {
                     echo '';
                 }?></strong>

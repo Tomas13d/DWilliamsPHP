@@ -11,7 +11,7 @@
     <link href="<?php echo base_url('public/assets/css/home.css');?>" rel="stylesheet">
     <link rel="shortcut icon" href="<?php echo base_url('public/assets/images/LogoVoid.png');?>" type="image/png" />
     <script src="https://kit.fontawesome.com/cc5fa15e95.js" crossorigin="anonymous"></script>
-    <title>d' williams Inmobiliaria - San Luis</title>
+    <title>d' williams - Inmobiliaria San Luis</title>
 </head>
 
 <body>

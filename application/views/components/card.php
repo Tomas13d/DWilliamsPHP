@@ -23,7 +23,7 @@
                  foreach (($estate->images) as $index => $image) {  ?>
                 <div class="<?php echo ($image->def === "1" ? "carousel-item active" : "carousel-item")?>">
                     <img src="../../../images/estate/<?= $image->image?>" class="d-block w-100 card-img"
-                        alt="<?= $estate->title?>">
+                        alt="<?= especialCharactersFix($estate->title)?>">
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="<?php echo "#card".$cardId?>"
                     data-bs-slide="prev">
@@ -35,7 +35,7 @@
                 </button>
                 <?php }} else { ?>
                 <img src="<?php echo base_url('public/assets/images/notImage.png'); ?>" class="d-block w-100 card-img"
-                    alt="<?= $estate->title?>">
+                    alt="<?= especialCharactersFix($estate->title)?>">
                 <?php } ?>
             </a>
         </div>
@@ -43,7 +43,7 @@
     </div>
     <div class="info-container">
     <a class="no-decoration" href="<?php echo base_url("individualProp?estate=$estate->rel");?>">
-        <h5 class="card-title"><?= $estate->title ?>
+        <h5 class="card-title"><?=especialCharactersFix($estate->title)?>
         </h5>
                 </a>
         <p class="card-price"><?php
