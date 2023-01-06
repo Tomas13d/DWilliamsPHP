@@ -30,7 +30,8 @@ class IndividualProp extends CI_Controller {
 			$estate->extraIcons = $extraIcons;
 			$smallcards .=  $this->load->view('components/smallcard', ["cardId" => $index, "estate" => $estate ], true);
 		}
-		$navColor = false;
+		
+		$navColor = true;
 		$this->load->view('head');
 		$this->load->view('components/navbar', ["navColor" => $navColor]);
         $this->load->view('individualProp', ["smallCards" => $smallcards, "individualEstate" => $individualEstate, "contactInfo" => $contactInfo]);

@@ -1,4 +1,4 @@
-<div class="card">
+<div class="card custom-card">
     <div class="top-box <?php
     echo $estate->op === "2" ? "gold" : "redbrown"
     ?>"><?php
@@ -52,6 +52,16 @@
                                                         } else {
                                                             echo 'Consultar';
                                                         } ?></p>
+                                                        <div class="icons-container row">
+            <?php
+               foreach (($estate->extraIcons) as $index => $icon){ ?>
+            <div class="col col-6">
+                <i class="<?= $icon->icon?> icon-text"></i><?= $icon->name?>
+            </div>
+            <?php    
+           };?>
+
+        </div>
     </div>
 
 </div>
