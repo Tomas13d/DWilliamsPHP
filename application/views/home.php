@@ -2,17 +2,8 @@
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
         <div class="mobile-wallpaper"></div>
         <div class="carousel-inner">
-            <div class="carousel-item">
-                <img src="<?php echo base_url('public/assets/images/San_Luis1.jpg'); ?>" class="d-block w-100 carrousel-img" alt="Hospital Ramon Carillo">
-            </div>
-            <div class="carousel-item">
-                <img src="<?php echo base_url('public/assets/images/Terrazas_del_Portezuelo.jpg'); ?>" class="d-block w-100 carrousel-img" alt="Potrero de los Funes">
-            </div>
             <div class="carousel-item active">
                 <img src="<?php echo base_url('public/assets/images/sierras.jpg'); ?>" class="d-block w-100 carrousel-img" alt="Inmobiliaria-terrazas">
-            </div>
-            <div class="carousel-item">
-                <img src="<?php echo base_url('public/assets/images/Hospital.jpeg'); ?>" class="d-block w-100 carrousel-img" alt="Inmobiliaria-terrazas">
             </div>
         </div>
         <div class="opacity-layer">

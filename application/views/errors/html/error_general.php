@@ -1,6 +1,5 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-header('Location: https://dwilliams.com.ar/notFound'); exit;
 ?><!DOCTYPE html>
 <html lang="en">
 <head>

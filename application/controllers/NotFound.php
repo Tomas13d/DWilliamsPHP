@@ -11,7 +11,6 @@ class NotFound extends CI_Controller {
 	{
         $navColor = true;
         $baseURL = base_url("/");
-        header("Refresh: 3; URL=$baseURL");
         $this->output->set_status_header('404'); 
 		$this->load->view('head');
 		$this->load->view('components/navbar', ["navColor" => $navColor]);
